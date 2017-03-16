@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package vista;
+package modelo;
 
 /**
  *
  * @author mybas
  */
-public class Vista {
+public class Postre extends Plato {
+    
+    public Postre(float precio, String nombreplato, String nom, float cant, int cod) {
+        super(precio, nombreplato, nom, cant, cod);
+    }
     
 }
