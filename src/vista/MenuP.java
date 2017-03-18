@@ -13,12 +13,12 @@ import java.awt.Toolkit;
  *
  * @author mybas
  */
-public class MenuPlatos extends javax.swing.JFrame {
+public class MenuP extends javax.swing.JFrame {
 
     /**
      * Creates new form IntPrincipal
      */
-    public MenuPlatos() {
+    public MenuP() {
         initComponents();
         Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Recursos/LGC_Icon.png"));
         setIconImage(icon);
@@ -42,6 +42,7 @@ public class MenuPlatos extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         MenuPP = new javax.swing.JButton();
         AdministracionPP = new javax.swing.JButton();
+        AdministracionPP1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Le Grand Chevalier");
@@ -52,55 +53,71 @@ public class MenuPlatos extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(960, 600));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Le Grand Chevalier Icono.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Le Grand Chevalier.png"))); // NOI18N
+        jLabel1.setMaximumSize(new java.awt.Dimension(760, 308));
+        jLabel1.setMinimumSize(new java.awt.Dimension(760, 308));
 
-        MenuPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu normal.png"))); // NOI18N
+        MenuPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos normal.png"))); // NOI18N
         MenuPP.setBorder(null);
         MenuPP.setBorderPainted(false);
         MenuPP.setContentAreaFilled(false);
         MenuPP.setMaximumSize(new java.awt.Dimension(242, 70));
         MenuPP.setMinimumSize(new java.awt.Dimension(242, 70));
         MenuPP.setPreferredSize(new java.awt.Dimension(242, 70));
-        MenuPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu presionado.png"))); // NOI18N
-        MenuPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu arriba.png"))); // NOI18N
-        MenuPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu arriba.png"))); // NOI18N
+        MenuPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos presionado.png"))); // NOI18N
+        MenuPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos arriba.png"))); // NOI18N
+        MenuPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos arriba.png"))); // NOI18N
 
-        AdministracionPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/Admin normal.png"))); // NOI18N
+        AdministracionPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas normal.png"))); // NOI18N
         AdministracionPP.setBorder(null);
         AdministracionPP.setBorderPainted(false);
         AdministracionPP.setContentAreaFilled(false);
         AdministracionPP.setMaximumSize(new java.awt.Dimension(242, 70));
         AdministracionPP.setMinimumSize(new java.awt.Dimension(242, 70));
         AdministracionPP.setPreferredSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/admin presionado.png"))); // NOI18N
-        AdministracionPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/admin arriba.png"))); // NOI18N
-        AdministracionPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/admin arriba.png"))); // NOI18N
+        AdministracionPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas presionado.png"))); // NOI18N
+        AdministracionPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas arriba.png"))); // NOI18N
+        AdministracionPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas arriba.png"))); // NOI18N
+
+        AdministracionPP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres normal.png"))); // NOI18N
+        AdministracionPP1.setBorder(null);
+        AdministracionPP1.setBorderPainted(false);
+        AdministracionPP1.setContentAreaFilled(false);
+        AdministracionPP1.setMaximumSize(new java.awt.Dimension(242, 70));
+        AdministracionPP1.setMinimumSize(new java.awt.Dimension(242, 70));
+        AdministracionPP1.setPreferredSize(new java.awt.Dimension(242, 70));
+        AdministracionPP1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres presionado.png"))); // NOI18N
+        AdministracionPP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres arriba.png"))); // NOI18N
+        AdministracionPP1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres arriba.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(355, 355, 355)
-                .addComponent(jLabel1)
+                .addGap(100, 100, 100)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(133, 133, 133)
+                .addGap(49, 49, 49)
                 .addComponent(MenuPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
+                .addGap(64, 64, 64)
                 .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(132, 132, 132))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                .addComponent(AdministracionPP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(52, 52, 52))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(95, 95, 95)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(MenuPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(112, Short.MAX_VALUE))
+                    .addComponent(AdministracionPP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
 
         pack();
@@ -123,14 +140,22 @@ public class MenuPlatos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MenuPlatos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MenuPlatos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MenuPlatos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MenuPlatos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MenuP.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -143,13 +168,14 @@ public class MenuPlatos extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MenuPlatos().setVisible(true);
+                new MenuP().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AdministracionPP;
+    private javax.swing.JButton AdministracionPP1;
     private javax.swing.JButton MenuPP;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
