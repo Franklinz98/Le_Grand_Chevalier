@@ -43,6 +43,10 @@ public class MPlatos extends javax.swing.JFrame {
 
         PanelRojo = new javax.swing.JPanel();
         LabelOrden = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        CocinaAD = new javax.swing.JButton();
+        CocinaAD1 = new javax.swing.JButton();
         LabelPlatos = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -59,20 +63,66 @@ public class MPlatos extends javax.swing.JFrame {
         LabelOrden.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelOrden.setText("Orden");
 
+        jList1.setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane2.setViewportView(jList1);
+
+        CocinaAD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/enviar normal.png"))); // NOI18N
+        CocinaAD.setBorder(null);
+        CocinaAD.setBorderPainted(false);
+        CocinaAD.setContentAreaFilled(false);
+        CocinaAD.setMaximumSize(new java.awt.Dimension(90, 33));
+        CocinaAD.setMinimumSize(new java.awt.Dimension(90, 33));
+        CocinaAD.setPreferredSize(new java.awt.Dimension(90, 33));
+        CocinaAD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/enviar presionado.png"))); // NOI18N
+        CocinaAD.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/Enviar arriba.png"))); // NOI18N
+        CocinaAD.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/Enviar arriba.png"))); // NOI18N
+
+        CocinaAD1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/imprimir normal.png"))); // NOI18N
+        CocinaAD1.setBorder(null);
+        CocinaAD1.setBorderPainted(false);
+        CocinaAD1.setContentAreaFilled(false);
+        CocinaAD1.setMaximumSize(new java.awt.Dimension(90, 33));
+        CocinaAD1.setMinimumSize(new java.awt.Dimension(90, 33));
+        CocinaAD1.setPreferredSize(new java.awt.Dimension(90, 33));
+        CocinaAD1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/imprimir presionado.png"))); // NOI18N
+        CocinaAD1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/imprimir arriba.png"))); // NOI18N
+        CocinaAD1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/imprimir arriba.png"))); // NOI18N
+
         javax.swing.GroupLayout PanelRojoLayout = new javax.swing.GroupLayout(PanelRojo);
         PanelRojo.setLayout(PanelRojoLayout);
         PanelRojoLayout.setHorizontalGroup(
             PanelRojoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelRojoLayout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(LabelOrden)
-                .addContainerGap(71, Short.MAX_VALUE))
+            .addGroup(PanelRojoLayout.createSequentialGroup()
+                .addGroup(PanelRojoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelRojoLayout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addComponent(LabelOrden))
+                    .addGroup(PanelRojoLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(PanelRojoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PanelRojoLayout.createSequentialGroup()
+                                .addComponent(CocinaAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(CocinaAD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(20, 20, 20))
         );
         PanelRojoLayout.setVerticalGroup(
             PanelRojoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelRojoLayout.createSequentialGroup()
                 .addComponent(LabelOrden)
-                .addGap(0, 0, 0))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 424, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(PanelRojoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(CocinaAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CocinaAD1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         LabelPlatos.setFont(new java.awt.Font("Freestyle Script", 0, 72)); // NOI18N
@@ -85,17 +135,17 @@ public class MPlatos extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(296, 296, 296)
+                .addGap(287, 287, 287)
                 .addComponent(LabelPlatos)
-                .addGap(296, 296, 296)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 305, Short.MAX_VALUE)
                 .addComponent(PanelRojo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(LabelPlatos)
-                .addContainerGap(514, Short.MAX_VALUE))
-            .addComponent(PanelRojo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(PanelRojo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -140,8 +190,12 @@ public class MPlatos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton CocinaAD;
+    private javax.swing.JButton CocinaAD1;
     private javax.swing.JLabel LabelOrden;
     private javax.swing.JLabel LabelPlatos;
     private javax.swing.JPanel PanelRojo;
+    private javax.swing.JList<String> jList1;
+    private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
 }
