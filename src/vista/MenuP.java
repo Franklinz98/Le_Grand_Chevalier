@@ -40,9 +40,9 @@ public class MenuP extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        MenuPP = new javax.swing.JButton();
-        AdministracionPP = new javax.swing.JButton();
-        AdministracionPP1 = new javax.swing.JButton();
+        PlatosM = new javax.swing.JButton();
+        BebidasM = new javax.swing.JButton();
+        PostresM = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Le Grand Chevalier");
@@ -57,38 +57,43 @@ public class MenuP extends javax.swing.JFrame {
         jLabel1.setMaximumSize(new java.awt.Dimension(760, 308));
         jLabel1.setMinimumSize(new java.awt.Dimension(760, 308));
 
-        MenuPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos normal.png"))); // NOI18N
-        MenuPP.setBorder(null);
-        MenuPP.setBorderPainted(false);
-        MenuPP.setContentAreaFilled(false);
-        MenuPP.setMaximumSize(new java.awt.Dimension(242, 70));
-        MenuPP.setMinimumSize(new java.awt.Dimension(242, 70));
-        MenuPP.setPreferredSize(new java.awt.Dimension(242, 70));
-        MenuPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos presionado.png"))); // NOI18N
-        MenuPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos arriba.png"))); // NOI18N
-        MenuPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos arriba.png"))); // NOI18N
+        PlatosM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos normal.png"))); // NOI18N
+        PlatosM.setBorder(null);
+        PlatosM.setBorderPainted(false);
+        PlatosM.setContentAreaFilled(false);
+        PlatosM.setMaximumSize(new java.awt.Dimension(242, 70));
+        PlatosM.setMinimumSize(new java.awt.Dimension(242, 70));
+        PlatosM.setPreferredSize(new java.awt.Dimension(242, 70));
+        PlatosM.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos presionado.png"))); // NOI18N
+        PlatosM.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos arriba.png"))); // NOI18N
+        PlatosM.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos arriba.png"))); // NOI18N
+        PlatosM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PlatosMActionPerformed(evt);
+            }
+        });
 
-        AdministracionPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas normal.png"))); // NOI18N
-        AdministracionPP.setBorder(null);
-        AdministracionPP.setBorderPainted(false);
-        AdministracionPP.setContentAreaFilled(false);
-        AdministracionPP.setMaximumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setMinimumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setPreferredSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas presionado.png"))); // NOI18N
-        AdministracionPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas arriba.png"))); // NOI18N
-        AdministracionPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas arriba.png"))); // NOI18N
+        BebidasM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas normal.png"))); // NOI18N
+        BebidasM.setBorder(null);
+        BebidasM.setBorderPainted(false);
+        BebidasM.setContentAreaFilled(false);
+        BebidasM.setMaximumSize(new java.awt.Dimension(242, 70));
+        BebidasM.setMinimumSize(new java.awt.Dimension(242, 70));
+        BebidasM.setPreferredSize(new java.awt.Dimension(242, 70));
+        BebidasM.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas presionado.png"))); // NOI18N
+        BebidasM.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas arriba.png"))); // NOI18N
+        BebidasM.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas arriba.png"))); // NOI18N
 
-        AdministracionPP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres normal.png"))); // NOI18N
-        AdministracionPP1.setBorder(null);
-        AdministracionPP1.setBorderPainted(false);
-        AdministracionPP1.setContentAreaFilled(false);
-        AdministracionPP1.setMaximumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP1.setMinimumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP1.setPreferredSize(new java.awt.Dimension(242, 70));
-        AdministracionPP1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres presionado.png"))); // NOI18N
-        AdministracionPP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres arriba.png"))); // NOI18N
-        AdministracionPP1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres arriba.png"))); // NOI18N
+        PostresM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres normal.png"))); // NOI18N
+        PostresM.setBorder(null);
+        PostresM.setBorderPainted(false);
+        PostresM.setContentAreaFilled(false);
+        PostresM.setMaximumSize(new java.awt.Dimension(242, 70));
+        PostresM.setMinimumSize(new java.awt.Dimension(242, 70));
+        PostresM.setPreferredSize(new java.awt.Dimension(242, 70));
+        PostresM.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres presionado.png"))); // NOI18N
+        PostresM.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres arriba.png"))); // NOI18N
+        PostresM.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres arriba.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,11 +105,11 @@ public class MenuP extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(49, 49, 49)
-                .addComponent(MenuPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(PlatosM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(64, 64, 64)
-                .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(BebidasM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
-                .addComponent(AdministracionPP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(PostresM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(52, 52, 52))
         );
         layout.setVerticalGroup(
@@ -114,14 +119,19 @@ public class MenuP extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(55, 55, 55)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(MenuPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AdministracionPP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BebidasM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PlatosM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PostresM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(72, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void PlatosMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlatosMActionPerformed
+        MPlatos plato = new MPlatos();
+        plato.setVisible(true);
+    }//GEN-LAST:event_PlatosMActionPerformed
 
     /**
      * @param args the command line arguments
@@ -174,9 +184,9 @@ public class MenuP extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AdministracionPP;
-    private javax.swing.JButton AdministracionPP1;
-    private javax.swing.JButton MenuPP;
+    private javax.swing.JButton BebidasM;
+    private javax.swing.JButton PlatosM;
+    private javax.swing.JButton PostresM;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

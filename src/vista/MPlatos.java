@@ -23,11 +23,13 @@ public class MPlatos extends javax.swing.JFrame {
         Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Recursos/LGC_Icon.png"));
         setIconImage(icon);
         //Color JFrame
-        Color Naranjarest=new Color(217,120,26);
-        Color Vinorest=new Color(217,120,26);
-        Color Grisrest=new Color(142,0,16);
-        Color Blancorest=new Color(255,255,255);
+        Color Naranjarest = new Color(217, 120, 26);
+        Color Vinorest = new Color(142, 0, 16);
+        Color Grisrest = new Color(16, 19, 24);
+        Color Blancorest = new Color(255, 255, 255);
+
         this.getContentPane().setBackground(Naranjarest);
+        PanelRojo.setBackground(Vinorest);
     }
 
     /**
@@ -39,9 +41,9 @@ public class MPlatos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        MenuPP = new javax.swing.JButton();
-        AdministracionPP = new javax.swing.JButton();
+        PanelRojo = new javax.swing.JPanel();
+        LabelOrden = new javax.swing.JLabel();
+        LabelPlatos = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Le Grand Chevalier");
@@ -52,55 +54,48 @@ public class MPlatos extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(960, 600));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Le Grand Chevalier Icono.png"))); // NOI18N
+        LabelOrden.setFont(new java.awt.Font("Freestyle Script", 0, 72)); // NOI18N
+        LabelOrden.setForeground(new java.awt.Color(255, 255, 255));
+        LabelOrden.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelOrden.setText("Orden");
 
-        MenuPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu normal.png"))); // NOI18N
-        MenuPP.setBorder(null);
-        MenuPP.setBorderPainted(false);
-        MenuPP.setContentAreaFilled(false);
-        MenuPP.setMaximumSize(new java.awt.Dimension(242, 70));
-        MenuPP.setMinimumSize(new java.awt.Dimension(242, 70));
-        MenuPP.setPreferredSize(new java.awt.Dimension(242, 70));
-        MenuPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu presionado.png"))); // NOI18N
-        MenuPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu arriba.png"))); // NOI18N
-        MenuPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu arriba.png"))); // NOI18N
+        javax.swing.GroupLayout PanelRojoLayout = new javax.swing.GroupLayout(PanelRojo);
+        PanelRojo.setLayout(PanelRojoLayout);
+        PanelRojoLayout.setHorizontalGroup(
+            PanelRojoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelRojoLayout.createSequentialGroup()
+                .addGap(71, 71, 71)
+                .addComponent(LabelOrden)
+                .addContainerGap(71, Short.MAX_VALUE))
+        );
+        PanelRojoLayout.setVerticalGroup(
+            PanelRojoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelRojoLayout.createSequentialGroup()
+                .addComponent(LabelOrden)
+                .addGap(0, 0, 0))
+        );
 
-        AdministracionPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/Admin normal.png"))); // NOI18N
-        AdministracionPP.setBorder(null);
-        AdministracionPP.setBorderPainted(false);
-        AdministracionPP.setContentAreaFilled(false);
-        AdministracionPP.setMaximumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setMinimumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setPreferredSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/admin presionado.png"))); // NOI18N
-        AdministracionPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/admin arriba.png"))); // NOI18N
-        AdministracionPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/admin arriba.png"))); // NOI18N
+        LabelPlatos.setFont(new java.awt.Font("Freestyle Script", 0, 72)); // NOI18N
+        LabelPlatos.setForeground(new java.awt.Color(16, 19, 24));
+        LabelPlatos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelPlatos.setText("Platos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(355, 355, 355)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(133, 133, 133)
-                .addComponent(MenuPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
-                .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(132, 132, 132))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(296, 296, 296)
+                .addComponent(LabelPlatos)
+                .addGap(296, 296, 296)
+                .addComponent(PanelRojo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(95, 95, 95)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(MenuPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(112, Short.MAX_VALUE))
+                .addComponent(LabelPlatos)
+                .addContainerGap(514, Short.MAX_VALUE))
+            .addComponent(PanelRojo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -145,8 +140,8 @@ public class MPlatos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AdministracionPP;
-    private javax.swing.JButton MenuPP;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel LabelOrden;
+    private javax.swing.JLabel LabelPlatos;
+    private javax.swing.JPanel PanelRojo;
     // End of variables declaration//GEN-END:variables
 }

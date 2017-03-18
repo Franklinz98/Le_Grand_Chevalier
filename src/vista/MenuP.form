@@ -45,11 +45,11 @@
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-              <Component id="MenuPP" min="-2" max="-2" attributes="0"/>
+              <Component id="PlatosM" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-              <Component id="AdministracionPP" min="-2" max="-2" attributes="0"/>
+              <Component id="BebidasM" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="69" max="32767" attributes="0"/>
-              <Component id="AdministracionPP1" min="-2" max="-2" attributes="0"/>
+              <Component id="PostresM" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -61,9 +61,9 @@
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="AdministracionPP" min="-2" max="-2" attributes="0"/>
-                  <Component id="MenuPP" min="-2" max="-2" attributes="0"/>
-                  <Component id="AdministracionPP1" min="-2" max="-2" attributes="0"/>
+                  <Component id="BebidasM" min="-2" max="-2" attributes="0"/>
+                  <Component id="PlatosM" min="-2" max="-2" attributes="0"/>
+                  <Component id="PostresM" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="72" max="32767" attributes="0"/>
           </Group>
@@ -84,7 +84,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="MenuPP">
+    <Component class="javax.swing.JButton" name="PlatosM">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Recursos/BotonesMenu/platos normal.png"/>
@@ -113,8 +113,11 @@
           <Image iconType="3" name="/Recursos/BotonesMenu/platos arriba.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PlatosMActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="AdministracionPP">
+    <Component class="javax.swing.JButton" name="BebidasM">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Recursos/BotonesMenu/bebidas normal.png"/>
@@ -144,7 +147,7 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="AdministracionPP1">
+    <Component class="javax.swing.JButton" name="PostresM">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Recursos/BotonesMenu/postres normal.png"/>

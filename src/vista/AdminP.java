@@ -37,10 +37,10 @@ public class AdminP extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        MenuPP = new javax.swing.JButton();
-        AdministracionPP = new javax.swing.JButton();
-        AdministracionPP2 = new javax.swing.JButton();
-        MenuPP1 = new javax.swing.JButton();
+        CocinaAD = new javax.swing.JButton();
+        ConsumoAD = new javax.swing.JButton();
+        InfoAD = new javax.swing.JButton();
+        VentasAD = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Le Grand Chevalier");
@@ -53,49 +53,49 @@ public class AdminP extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Le Grand Chevalier 2.png"))); // NOI18N
 
-        MenuPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/Cocina normal.png"))); // NOI18N
-        MenuPP.setBorder(null);
-        MenuPP.setBorderPainted(false);
-        MenuPP.setContentAreaFilled(false);
-        MenuPP.setMaximumSize(new java.awt.Dimension(242, 70));
-        MenuPP.setMinimumSize(new java.awt.Dimension(242, 70));
-        MenuPP.setPreferredSize(new java.awt.Dimension(242, 70));
-        MenuPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/cocina presionado.png"))); // NOI18N
-        MenuPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/cocina arriba.png"))); // NOI18N
-        MenuPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/cocina arriba.png"))); // NOI18N
+        CocinaAD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/Cocina normal.png"))); // NOI18N
+        CocinaAD.setBorder(null);
+        CocinaAD.setBorderPainted(false);
+        CocinaAD.setContentAreaFilled(false);
+        CocinaAD.setMaximumSize(new java.awt.Dimension(242, 70));
+        CocinaAD.setMinimumSize(new java.awt.Dimension(242, 70));
+        CocinaAD.setPreferredSize(new java.awt.Dimension(242, 70));
+        CocinaAD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/cocina presionado.png"))); // NOI18N
+        CocinaAD.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/cocina arriba.png"))); // NOI18N
+        CocinaAD.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/cocina arriba.png"))); // NOI18N
 
-        AdministracionPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo normal.png"))); // NOI18N
-        AdministracionPP.setBorder(null);
-        AdministracionPP.setBorderPainted(false);
-        AdministracionPP.setContentAreaFilled(false);
-        AdministracionPP.setMaximumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setMinimumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setPreferredSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo presionado.png"))); // NOI18N
-        AdministracionPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo arriba.png"))); // NOI18N
-        AdministracionPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo arriba.png"))); // NOI18N
+        ConsumoAD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo normal.png"))); // NOI18N
+        ConsumoAD.setBorder(null);
+        ConsumoAD.setBorderPainted(false);
+        ConsumoAD.setContentAreaFilled(false);
+        ConsumoAD.setMaximumSize(new java.awt.Dimension(242, 70));
+        ConsumoAD.setMinimumSize(new java.awt.Dimension(242, 70));
+        ConsumoAD.setPreferredSize(new java.awt.Dimension(242, 70));
+        ConsumoAD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo presionado.png"))); // NOI18N
+        ConsumoAD.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo arriba.png"))); // NOI18N
+        ConsumoAD.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo arriba.png"))); // NOI18N
 
-        AdministracionPP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info normal.png"))); // NOI18N
-        AdministracionPP2.setBorder(null);
-        AdministracionPP2.setBorderPainted(false);
-        AdministracionPP2.setContentAreaFilled(false);
-        AdministracionPP2.setMaximumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP2.setMinimumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP2.setPreferredSize(new java.awt.Dimension(242, 70));
-        AdministracionPP2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info presionado.png"))); // NOI18N
-        AdministracionPP2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info arriba.png"))); // NOI18N
-        AdministracionPP2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info arriba.png"))); // NOI18N
+        InfoAD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info normal.png"))); // NOI18N
+        InfoAD.setBorder(null);
+        InfoAD.setBorderPainted(false);
+        InfoAD.setContentAreaFilled(false);
+        InfoAD.setMaximumSize(new java.awt.Dimension(242, 70));
+        InfoAD.setMinimumSize(new java.awt.Dimension(242, 70));
+        InfoAD.setPreferredSize(new java.awt.Dimension(242, 70));
+        InfoAD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info presionado.png"))); // NOI18N
+        InfoAD.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info arriba.png"))); // NOI18N
+        InfoAD.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info arriba.png"))); // NOI18N
 
-        MenuPP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas normal.png"))); // NOI18N
-        MenuPP1.setBorder(null);
-        MenuPP1.setBorderPainted(false);
-        MenuPP1.setContentAreaFilled(false);
-        MenuPP1.setMaximumSize(new java.awt.Dimension(242, 70));
-        MenuPP1.setMinimumSize(new java.awt.Dimension(242, 70));
-        MenuPP1.setPreferredSize(new java.awt.Dimension(242, 70));
-        MenuPP1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas presionado.png"))); // NOI18N
-        MenuPP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas arriba.png"))); // NOI18N
-        MenuPP1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas arriba.png"))); // NOI18N
+        VentasAD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas normal.png"))); // NOI18N
+        VentasAD.setBorder(null);
+        VentasAD.setBorderPainted(false);
+        VentasAD.setContentAreaFilled(false);
+        VentasAD.setMaximumSize(new java.awt.Dimension(242, 70));
+        VentasAD.setMinimumSize(new java.awt.Dimension(242, 70));
+        VentasAD.setPreferredSize(new java.awt.Dimension(242, 70));
+        VentasAD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas presionado.png"))); // NOI18N
+        VentasAD.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas arriba.png"))); // NOI18N
+        VentasAD.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas arriba.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,13 +109,13 @@ public class AdminP extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(MenuPP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(VentasAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(64, 64, 64)
-                        .addComponent(AdministracionPP2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(InfoAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(MenuPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(CocinaAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(64, 64, 64)
-                        .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(ConsumoAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(205, 205, 205))
         );
         layout.setVerticalGroup(
@@ -125,12 +125,12 @@ public class AdminP extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(MenuPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ConsumoAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CocinaAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(AdministracionPP2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(MenuPP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(InfoAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(VentasAD, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
@@ -204,10 +204,10 @@ public class AdminP extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AdministracionPP;
-    private javax.swing.JButton AdministracionPP2;
-    private javax.swing.JButton MenuPP;
-    private javax.swing.JButton MenuPP1;
+    private javax.swing.JButton CocinaAD;
+    private javax.swing.JButton ConsumoAD;
+    private javax.swing.JButton InfoAD;
+    private javax.swing.JButton VentasAD;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
