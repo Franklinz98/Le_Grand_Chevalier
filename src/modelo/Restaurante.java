@@ -5,6 +5,10 @@
  */
 package modelo;
 
+import java.awt.Window;
+import vista.MenuPrincipal;
+
+
 /**
  *
  * @author mybas
@@ -15,7 +19,8 @@ public class Restaurante {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        MenuPrincipal MP = new MenuPrincipal();
+        MP.setVisible(true);
     }
     
 }
