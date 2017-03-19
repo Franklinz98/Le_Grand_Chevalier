@@ -23,7 +23,7 @@ public class AdminP extends javax.swing.JFrame {
         Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Recursos/LGC_Icon.png"));
         setIconImage(icon);
         //Color JFrame
-        Color Vinorest=new Color(142,0,16);
+        Color Vinorest = new Color(142, 0, 16);
         this.getContentPane().setBackground(Vinorest);
     }
 
@@ -42,7 +42,7 @@ public class AdminP extends javax.swing.JFrame {
         InfoAD = new javax.swing.JButton();
         VentasAD = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Le Grand Chevalier");
         setBackground(new java.awt.Color(217, 120, 26));
         setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
@@ -145,6 +145,7 @@ public class AdminP extends javax.swing.JFrame {
     private void CocinaADActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CocinaADActionPerformed
         Cocina vcocina = new Cocina();
         vcocina.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_CocinaADActionPerformed
 
     /**

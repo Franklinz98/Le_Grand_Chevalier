@@ -119,7 +119,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel2.setText("jLabel2");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Le Grand Chevalier");
         setBackground(new java.awt.Color(217, 120, 26));
         setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
@@ -214,9 +214,6 @@ public class MPlatos extends javax.swing.JFrame {
         Plato.setPreferredSize(new java.awt.Dimension(166, 240));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/blanco.png"))); // NOI18N
-        jLabel1.setMaximumSize(new java.awt.Dimension(145, 145));
-        jLabel1.setMinimumSize(new java.awt.Dimension(145, 145));
-        jLabel1.setPreferredSize(new java.awt.Dimension(145, 145));
 
         jLabel3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -298,7 +295,7 @@ public class MPlatos extends javax.swing.JFrame {
                     .addComponent(jCheckBox2)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel1))
                 .addContainerGap(253, Short.MAX_VALUE))
             .addGroup(PlatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(PlatoLayout.createSequentialGroup()
@@ -310,7 +307,7 @@ public class MPlatos extends javax.swing.JFrame {
             PlatoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PlatoLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1)
                 .addGap(1, 1, 1)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -931,12 +928,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(287, 287, 287)
-                        .addComponent(LabelPlatos)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(LabelPlatos))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(Scrollp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                        .addComponent(Scrollp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(PanelRojo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
@@ -998,8 +994,6 @@ public class MPlatos extends javax.swing.JFrame {
     private javax.swing.JPanel Menu;
     private javax.swing.JPanel PanelRojo;
     private javax.swing.JPanel Plato;
-    private javax.swing.JPanel Plato1;
-    private javax.swing.JPanel Plato10;
     private javax.swing.JPanel Plato11;
     private javax.swing.JPanel Plato12;
     private javax.swing.JPanel Plato13;
@@ -1009,20 +1003,11 @@ public class MPlatos extends javax.swing.JFrame {
     private javax.swing.JPanel Plato17;
     private javax.swing.JPanel Plato18;
     private javax.swing.JPanel Plato19;
-    private javax.swing.JPanel Plato2;
     private javax.swing.JPanel Plato20;
     private javax.swing.JPanel Plato21;
-    private javax.swing.JPanel Plato3;
-    private javax.swing.JPanel Plato4;
-    private javax.swing.JPanel Plato5;
-    private javax.swing.JPanel Plato6;
-    private javax.swing.JPanel Plato7;
     private javax.swing.JPanel Plato8;
-    private javax.swing.JPanel Plato9;
     private javax.swing.JScrollPane Scrollp;
     private javax.swing.JCheckBox jCheckBox10;
-    private javax.swing.JCheckBox jCheckBox11;
-    private javax.swing.JCheckBox jCheckBox12;
     private javax.swing.JCheckBox jCheckBox13;
     private javax.swing.JCheckBox jCheckBox14;
     private javax.swing.JCheckBox jCheckBox15;
@@ -1035,41 +1020,12 @@ public class MPlatos extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox21;
     private javax.swing.JCheckBox jCheckBox22;
     private javax.swing.JCheckBox jCheckBox23;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
-    private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JCheckBox jCheckBox8;
-    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
@@ -1086,7 +1042,6 @@ public class MPlatos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
@@ -1097,7 +1052,6 @@ public class MPlatos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
@@ -1106,9 +1060,6 @@ public class MPlatos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables

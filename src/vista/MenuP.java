@@ -23,10 +23,10 @@ public class MenuP extends javax.swing.JFrame {
         Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Recursos/LGC_Icon.png"));
         setIconImage(icon);
         //Color JFrame
-        Color Naranjarest=new Color(217,120,26);
-        Color Vinorest=new Color(217,120,26);
-        Color Grisrest=new Color(142,0,16);
-        Color Blancorest=new Color(255,255,255);
+        Color Naranjarest = new Color(217, 120, 26);
+        Color Vinorest = new Color(217, 120, 26);
+        Color Grisrest = new Color(142, 0, 16);
+        Color Blancorest = new Color(255, 255, 255);
         this.getContentPane().setBackground(Naranjarest);
     }
 
@@ -44,7 +44,7 @@ public class MenuP extends javax.swing.JFrame {
         BebidasM = new javax.swing.JButton();
         PostresM = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Le Grand Chevalier");
         setBackground(new java.awt.Color(217, 120, 26));
         setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
@@ -54,8 +54,6 @@ public class MenuP extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(960, 600));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Le Grand Chevalier.png"))); // NOI18N
-        jLabel1.setMaximumSize(new java.awt.Dimension(760, 308));
-        jLabel1.setMinimumSize(new java.awt.Dimension(760, 308));
 
         PlatosM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/platos normal.png"))); // NOI18N
         PlatosM.setBorder(null);
@@ -101,7 +99,7 @@ public class MenuP extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(100, 100, 100)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(49, 49, 49)
@@ -116,7 +114,7 @@ public class MenuP extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(95, 95, 95)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1)
                 .addGap(55, 55, 55)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(BebidasM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -131,6 +129,7 @@ public class MenuP extends javax.swing.JFrame {
     private void PlatosMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlatosMActionPerformed
         MPlatos plato = new MPlatos();
         plato.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_PlatosMActionPerformed
 
     /**

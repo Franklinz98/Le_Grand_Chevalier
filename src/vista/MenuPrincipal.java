@@ -120,13 +120,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void MenuPPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuPPActionPerformed
         MenuP elec = new MenuP();
         elec.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
     }//GEN-LAST:event_MenuPPActionPerformed
 
     private void AdministracionPPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdministracionPPActionPerformed
         AdminP elec = new AdminP();
         elec.setVisible(true);
-        this.setVisible(false);
+        //this.setVisible(false);
     }//GEN-LAST:event_AdministracionPPActionPerformed
 
     /**
