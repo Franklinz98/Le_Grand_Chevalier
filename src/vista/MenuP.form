@@ -140,6 +140,9 @@
           <Image iconType="3" name="/Recursos/BotonesMenu/bebidas arriba.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BebidasMActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="PostresM">
       <Properties>
@@ -170,6 +173,9 @@
           <Image iconType="3" name="/Recursos/BotonesMenu/postres arriba.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PostresMActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

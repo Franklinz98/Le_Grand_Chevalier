@@ -13,12 +13,12 @@ import java.awt.Toolkit;
  *
  * @author mybas
  */
-public class MPlatos extends javax.swing.JFrame {
+public class MPostres extends javax.swing.JFrame {
 
     /**
      * Creates new form IntPrincipal
      */
-    public MPlatos() {
+    public MPostres() {
         initComponents();
         Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Recursos/LGC_Icon.png"));
         setIconImage(icon);
@@ -228,7 +228,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Plato xxxx");
+        jLabel1.setText("Postre xxxx");
 
         jLabel14.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
@@ -249,7 +249,7 @@ public class MPlatos extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -294,7 +294,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Plato xxxx");
+        jLabel4.setText("Postre xxxx");
 
         jLabel16.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
@@ -321,8 +321,8 @@ public class MPlatos extends javax.swing.JFrame {
                             .addComponent(jCheckBox3)
                             .addComponent(jLabel4)
                             .addComponent(jLabel16))
-                        .addGap(98, 98, 98)))
-                .addGap(10, 10, 10))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -360,7 +360,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Plato xxxx");
+        jLabel3.setText("Postre xxxx");
 
         jLabel15.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
@@ -387,8 +387,8 @@ public class MPlatos extends javax.swing.JFrame {
                             .addComponent(jCheckBox2)
                             .addComponent(jLabel3)
                             .addComponent(jLabel15))
-                        .addGap(98, 98, 98)))
-                .addGap(10, 10, 10))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -427,7 +427,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Plato xxxx");
+        jLabel7.setText("Postre xxxx");
 
         jLabel17.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
@@ -448,7 +448,7 @@ public class MPlatos extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel7)
@@ -494,7 +494,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Plato xxxx");
+        jLabel6.setText("Postre xxxx");
 
         jLabel18.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
@@ -521,8 +521,8 @@ public class MPlatos extends javax.swing.JFrame {
                             .addComponent(jCheckBox5)
                             .addComponent(jLabel6)
                             .addComponent(jLabel18))
-                        .addGap(98, 98, 98)))
-                .addGap(10, 10, 10))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -561,7 +561,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Plato xxxx");
+        jLabel5.setText("Postre xxxx");
 
         jLabel19.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
@@ -588,8 +588,8 @@ public class MPlatos extends javax.swing.JFrame {
                             .addComponent(jCheckBox6)
                             .addComponent(jLabel5)
                             .addComponent(jLabel19))
-                        .addGap(98, 98, 98)))
-                .addGap(10, 10, 10))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -628,7 +628,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Plato xxxx");
+        jLabel10.setText("Postre xxxx");
 
         jLabel20.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
@@ -649,7 +649,7 @@ public class MPlatos extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jCheckBox7)
@@ -695,7 +695,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Plato xxxx");
+        jLabel9.setText("Postre xxxx");
 
         jLabel21.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
@@ -722,8 +722,8 @@ public class MPlatos extends javax.swing.JFrame {
                             .addComponent(jCheckBox8)
                             .addComponent(jLabel9)
                             .addComponent(jLabel21))
-                        .addGap(98, 98, 98)))
-                .addGap(10, 10, 10))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -762,7 +762,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Plato xxxx");
+        jLabel8.setText("Postre xxxx");
 
         jLabel22.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
@@ -789,8 +789,8 @@ public class MPlatos extends javax.swing.JFrame {
                             .addComponent(jCheckBox9)
                             .addComponent(jLabel8)
                             .addComponent(jLabel22))
-                        .addGap(98, 98, 98)))
-                .addGap(10, 10, 10))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -829,7 +829,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel12.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("Plato xxxx");
+        jLabel12.setText("Postre xxxx");
 
         jLabel24.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
@@ -856,8 +856,8 @@ public class MPlatos extends javax.swing.JFrame {
                             .addComponent(jCheckBox11)
                             .addComponent(jLabel12)
                             .addComponent(jLabel24))
-                        .addGap(98, 98, 98)))
-                .addGap(10, 10, 10))
+                        .addGap(0, 90, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -896,7 +896,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Plato xxxx");
+        jLabel11.setText("Postre xxxx");
 
         jLabel25.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
@@ -923,8 +923,8 @@ public class MPlatos extends javax.swing.JFrame {
                             .addComponent(jCheckBox12)
                             .addComponent(jLabel11)
                             .addComponent(jLabel25))
-                        .addGap(98, 98, 98)))
-                .addGap(10, 10, 10))
+                        .addGap(0, 90, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -955,7 +955,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Plato xxxx");
+        jLabel13.setText("Postre xxxx");
 
         jLabel23.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
@@ -1006,11 +1006,11 @@ public class MPlatos extends javax.swing.JFrame {
             .addGroup(MenuLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
                     .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                 .addGroup(MenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1097,14 +1097,18 @@ public class MPlatos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MPlatos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MPostres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MPlatos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MPostres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MPlatos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MPostres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MPlatos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MPostres.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -1113,7 +1117,7 @@ public class MPlatos extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MPlatos().setVisible(true);
+                new MPostres().setVisible(true);
             }
         });
     }

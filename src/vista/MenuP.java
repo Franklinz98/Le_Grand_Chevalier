@@ -81,6 +81,11 @@ public class MenuP extends javax.swing.JFrame {
         BebidasM.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas presionado.png"))); // NOI18N
         BebidasM.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas arriba.png"))); // NOI18N
         BebidasM.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/bebidas arriba.png"))); // NOI18N
+        BebidasM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BebidasMActionPerformed(evt);
+            }
+        });
 
         PostresM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres normal.png"))); // NOI18N
         PostresM.setBorder(null);
@@ -92,6 +97,11 @@ public class MenuP extends javax.swing.JFrame {
         PostresM.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres presionado.png"))); // NOI18N
         PostresM.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres arriba.png"))); // NOI18N
         PostresM.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/postres arriba.png"))); // NOI18N
+        PostresM.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PostresMActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -131,6 +141,18 @@ public class MenuP extends javax.swing.JFrame {
         plato.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_PlatosMActionPerformed
+
+    private void BebidasMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BebidasMActionPerformed
+        MBebidas bebida = new MBebidas();
+        bebida.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_BebidasMActionPerformed
+
+    private void PostresMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PostresMActionPerformed
+        MPostres postre = new MPostres();
+        postre.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_PostresMActionPerformed
 
     /**
      * @param args the command line arguments
