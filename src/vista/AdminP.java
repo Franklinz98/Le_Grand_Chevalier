@@ -79,6 +79,11 @@ public class AdminP extends javax.swing.JFrame {
         ConsumoAD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo presionado.png"))); // NOI18N
         ConsumoAD.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo arriba.png"))); // NOI18N
         ConsumoAD.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo arriba.png"))); // NOI18N
+        ConsumoAD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ConsumoADActionPerformed(evt);
+            }
+        });
 
         InfoAD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info normal.png"))); // NOI18N
         InfoAD.setBorder(null);
@@ -90,6 +95,11 @@ public class AdminP extends javax.swing.JFrame {
         InfoAD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info presionado.png"))); // NOI18N
         InfoAD.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info arriba.png"))); // NOI18N
         InfoAD.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/info arriba.png"))); // NOI18N
+        InfoAD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                InfoADActionPerformed(evt);
+            }
+        });
 
         VentasAD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas normal.png"))); // NOI18N
         VentasAD.setBorder(null);
@@ -101,6 +111,11 @@ public class AdminP extends javax.swing.JFrame {
         VentasAD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas presionado.png"))); // NOI18N
         VentasAD.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas arriba.png"))); // NOI18N
         VentasAD.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/ventas arriba.png"))); // NOI18N
+        VentasAD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VentasADActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -147,6 +162,24 @@ public class AdminP extends javax.swing.JFrame {
         vcocina.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_CocinaADActionPerformed
+
+    private void ConsumoADActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConsumoADActionPerformed
+        Consumo vconsumo = new Consumo();
+        vconsumo.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_ConsumoADActionPerformed
+
+    private void VentasADActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VentasADActionPerformed
+        Venta vventa = new Venta();
+        vventa.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_VentasADActionPerformed
+
+    private void InfoADActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InfoADActionPerformed
+        Info vinfo = new Info();
+        vinfo.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_InfoADActionPerformed
 
     /**
      * @param args the command line arguments

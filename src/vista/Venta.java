@@ -25,8 +25,10 @@ public class Venta extends javax.swing.JFrame {
         //Color JFrame
         Color Vinorest = new Color(142, 0, 16);
         Color Grisrest = new Color(16, 19, 24);
+        Color Blancorest = new Color(255, 255, 255);
         this.getContentPane().setBackground(Vinorest);
         PanelGris.setBackground(Grisrest);
+        PanelBlanco.setBackground(Blancorest);
     }
 
     /**
@@ -39,8 +41,15 @@ public class Venta extends javax.swing.JFrame {
     private void initComponents() {
 
         PanelGris = new javax.swing.JPanel();
+        LabelOrden1 = new javax.swing.JLabel();
+        NumOrden = new javax.swing.JTextField();
+        LabelOrden = new javax.swing.JLabel();
+        PanelBlanco = new javax.swing.JPanel();
+        LabelPlatos = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Le Grand Chevalier");
         setBackground(new java.awt.Color(142, 0, 16));
         setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
@@ -52,15 +61,123 @@ public class Venta extends javax.swing.JFrame {
         PanelGris.setMaximumSize(new java.awt.Dimension(960, 151));
         PanelGris.setMinimumSize(new java.awt.Dimension(960, 151));
 
+        LabelOrden1.setFont(new java.awt.Font("Freestyle Script", 0, 72)); // NOI18N
+        LabelOrden1.setForeground(new java.awt.Color(255, 255, 255));
+        LabelOrden1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelOrden1.setText("Total:");
+
+        NumOrden.setFont(new java.awt.Font("Freestyle Script", 0, 36)); // NOI18N
+        NumOrden.setForeground(new java.awt.Color(16, 19, 24));
+        NumOrden.setBorder(null);
+        NumOrden.setMaximumSize(new java.awt.Dimension(110, 40));
+        NumOrden.setMinimumSize(new java.awt.Dimension(110, 40));
+        NumOrden.setPreferredSize(new java.awt.Dimension(110, 40));
+
         javax.swing.GroupLayout PanelGrisLayout = new javax.swing.GroupLayout(PanelGris);
         PanelGris.setLayout(PanelGrisLayout);
         PanelGrisLayout.setHorizontalGroup(
             PanelGrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 960, Short.MAX_VALUE)
+            .addGroup(PanelGrisLayout.createSequentialGroup()
+                .addGap(351, 351, 351)
+                .addComponent(LabelOrden1)
+                .addGap(18, 18, 18)
+                .addComponent(NumOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PanelGrisLayout.setVerticalGroup(
             PanelGrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 151, Short.MAX_VALUE)
+            .addGroup(PanelGrisLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addGroup(PanelGrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelOrden1)
+                    .addComponent(NumOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(48, Short.MAX_VALUE))
+        );
+
+        LabelOrden.setFont(new java.awt.Font("Freestyle Script", 0, 72)); // NOI18N
+        LabelOrden.setForeground(new java.awt.Color(255, 255, 255));
+        LabelOrden.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelOrden.setText("Ventas");
+
+        PanelBlanco.setMaximumSize(new java.awt.Dimension(784, 331));
+        PanelBlanco.setMinimumSize(new java.awt.Dimension(784, 331));
+        PanelBlanco.setPreferredSize(new java.awt.Dimension(784, 331));
+
+        LabelPlatos.setFont(new java.awt.Font("Freestyle Script", 0, 48)); // NOI18N
+        LabelPlatos.setForeground(new java.awt.Color(16, 19, 24));
+        LabelPlatos.setText("  Mesa   Orden                                       Valor");
+
+        jTable1.setAutoCreateRowSorter(true);
+        jTable1.setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "", "", ""
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setResizable(false);
+            jTable1.getColumnModel().getColumn(0).setPreferredWidth(110);
+            jTable1.getColumnModel().getColumn(1).setResizable(false);
+            jTable1.getColumnModel().getColumn(1).setPreferredWidth(547);
+            jTable1.getColumnModel().getColumn(2).setResizable(false);
+            jTable1.getColumnModel().getColumn(2).setPreferredWidth(110);
+        }
+
+        javax.swing.GroupLayout PanelBlancoLayout = new javax.swing.GroupLayout(PanelBlanco);
+        PanelBlanco.setLayout(PanelBlancoLayout);
+        PanelBlancoLayout.setHorizontalGroup(
+            PanelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(LabelPlatos, javax.swing.GroupLayout.DEFAULT_SIZE, 787, Short.MAX_VALUE)
+            .addGroup(PanelBlancoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1)
+                .addContainerGap())
+        );
+        PanelBlancoLayout.setVerticalGroup(
+            PanelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelBlancoLayout.createSequentialGroup()
+                .addComponent(LabelPlatos)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -68,11 +185,23 @@ public class Venta extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(PanelGris, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(420, 420, 420)
+                        .addComponent(LabelOrden))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(82, 82, 82)
+                        .addComponent(PanelBlanco, javax.swing.GroupLayout.PREFERRED_SIZE, 787, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(91, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 449, Short.MAX_VALUE)
+                .addComponent(LabelOrden)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PanelBlanco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(16, 16, 16)
                 .addComponent(PanelGris, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -112,14 +241,6 @@ public class Venta extends javax.swing.JFrame {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -130,6 +251,13 @@ public class Venta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel LabelOrden;
+    private javax.swing.JLabel LabelOrden1;
+    private javax.swing.JLabel LabelPlatos;
+    private javax.swing.JTextField NumOrden;
+    private javax.swing.JPanel PanelBlanco;
     private javax.swing.JPanel PanelGris;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

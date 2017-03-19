@@ -151,6 +151,9 @@
           <Image iconType="3" name="/Recursos/BotonesAdmin/consumo arriba.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ConsumoADActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="InfoAD">
       <Properties>
@@ -181,6 +184,9 @@
           <Image iconType="3" name="/Recursos/BotonesAdmin/info arriba.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="InfoADActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="VentasAD">
       <Properties>
@@ -211,6 +217,9 @@
           <Image iconType="3" name="/Recursos/BotonesAdmin/ventas arriba.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VentasADActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
