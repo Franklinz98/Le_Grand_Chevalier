@@ -137,9 +137,9 @@ public class MenuP extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void PlatosMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlatosMActionPerformed
+        this.setVisible(false);
         MPlatos plato = new MPlatos();
         plato.setVisible(true);
-        this.setVisible(false);
     }//GEN-LAST:event_PlatosMActionPerformed
 
     private void BebidasMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BebidasMActionPerformed

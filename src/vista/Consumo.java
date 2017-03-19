@@ -54,6 +54,7 @@ public class Consumo extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         LabelOrden4 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         PanelBlanco.setMaximumSize(new java.awt.Dimension(784, 331));
         PanelBlanco.setMinimumSize(new java.awt.Dimension(784, 331));
@@ -227,7 +228,7 @@ public class Consumo extends javax.swing.JFrame {
 
         LabelPlatos1.setFont(new java.awt.Font("Freestyle Script", 0, 48)); // NOI18N
         LabelPlatos1.setForeground(new java.awt.Color(16, 19, 24));
-        LabelPlatos1.setText(" Vendido    Alimento                      Cantidad   Pedido");
+        LabelPlatos1.setText(" Vendido    Alimento                       Cantidad  Pedido");
 
         jTable2.setAutoCreateRowSorter(true);
         jTable2.setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
@@ -313,6 +314,22 @@ public class Consumo extends javax.swing.JFrame {
         LabelOrden4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelOrden4.setText("Consumo");
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/vMenu normal.png"))); // NOI18N
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
+        jButton2.setMaximumSize(new java.awt.Dimension(81, 56));
+        jButton2.setMinimumSize(new java.awt.Dimension(81, 56));
+        jButton2.setPreferredSize(new java.awt.Dimension(81, 56));
+        jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/vMenu presionado.png"))); // NOI18N
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/vMenu arriba.png"))); // NOI18N
+        jButton2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/vMenu arriba.png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -324,14 +341,20 @@ public class Consumo extends javax.swing.JFrame {
                         .addGap(81, 81, 81)
                         .addComponent(PanelBlanco1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(396, 396, 396)
+                        .addContainerGap()
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(305, 305, 305)
                         .addComponent(LabelOrden4)))
                 .addContainerGap(92, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(LabelOrden4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LabelOrden4)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(14, 14, 14)
                 .addComponent(PanelBlanco1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
@@ -340,6 +363,12 @@ public class Consumo extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        AdminP elec = new AdminP();
+        elec.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -396,6 +425,7 @@ public class Consumo extends javax.swing.JFrame {
     private javax.swing.JPanel PanelBlanco1;
     private javax.swing.JPanel PanelGris;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
