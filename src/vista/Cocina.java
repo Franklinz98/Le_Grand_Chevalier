@@ -23,11 +23,12 @@ public class Cocina extends javax.swing.JFrame {
         Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Recursos/LGC_Icon.png"));
         setIconImage(icon);
         //Color JFrame
-        Color Naranjarest=new Color(217,120,26);
-        Color Vinorest=new Color(217,120,26);
-        Color Grisrest=new Color(142,0,16);
-        Color Blancorest=new Color(255,255,255);
-        this.getContentPane().setBackground(Naranjarest);
+        Color Vinorest = new Color(142, 0, 16);
+        Color Grisrest = new Color(16, 19, 24);
+        Color Blancorest = new Color(255, 255, 255);
+        this.getContentPane().setBackground(Vinorest);
+        PanelGris.setBackground(Grisrest);
+        PanelBlanco.setBackground(Blancorest);
     }
 
     /**
@@ -39,68 +40,221 @@ public class Cocina extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        MenuPP = new javax.swing.JButton();
-        AdministracionPP = new javax.swing.JButton();
+        PanelGris = new javax.swing.JPanel();
+        LabelOrden1 = new javax.swing.JLabel();
+        Mesa = new javax.swing.JTextField();
+        NumOrden = new javax.swing.JTextField();
+        LabelOrden2 = new javax.swing.JLabel();
+        LabelOrden3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        LabelOrden = new javax.swing.JLabel();
+        PanelBlanco = new javax.swing.JPanel();
+        LabelPlatos = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Le Grand Chevalier");
-        setBackground(new java.awt.Color(217, 120, 26));
+        setBackground(new java.awt.Color(142, 0, 16));
         setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
         setMinimumSize(new java.awt.Dimension(960, 600));
         setName("MP"); // NOI18N
         setResizable(false);
         setSize(new java.awt.Dimension(960, 600));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Le Grand Chevalier Icono.png"))); // NOI18N
+        PanelGris.setMaximumSize(new java.awt.Dimension(960, 151));
+        PanelGris.setMinimumSize(new java.awt.Dimension(960, 151));
 
-        MenuPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu normal.png"))); // NOI18N
-        MenuPP.setBorder(null);
-        MenuPP.setBorderPainted(false);
-        MenuPP.setContentAreaFilled(false);
-        MenuPP.setMaximumSize(new java.awt.Dimension(242, 70));
-        MenuPP.setMinimumSize(new java.awt.Dimension(242, 70));
-        MenuPP.setPreferredSize(new java.awt.Dimension(242, 70));
-        MenuPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu presionado.png"))); // NOI18N
-        MenuPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu arriba.png"))); // NOI18N
-        MenuPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/menu arriba.png"))); // NOI18N
+        LabelOrden1.setFont(new java.awt.Font("Freestyle Script", 0, 72)); // NOI18N
+        LabelOrden1.setForeground(new java.awt.Color(255, 255, 255));
+        LabelOrden1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelOrden1.setText("Orden Lista:");
 
-        AdministracionPP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/Admin normal.png"))); // NOI18N
-        AdministracionPP.setBorder(null);
-        AdministracionPP.setBorderPainted(false);
-        AdministracionPP.setContentAreaFilled(false);
-        AdministracionPP.setMaximumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setMinimumSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setPreferredSize(new java.awt.Dimension(242, 70));
-        AdministracionPP.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/admin presionado.png"))); // NOI18N
-        AdministracionPP.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/admin arriba.png"))); // NOI18N
-        AdministracionPP.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Botones Principal/admin arriba.png"))); // NOI18N
+        Mesa.setFont(new java.awt.Font("Freestyle Script", 0, 36)); // NOI18N
+        Mesa.setForeground(new java.awt.Color(16, 19, 24));
+        Mesa.setBorder(null);
+        Mesa.setMaximumSize(new java.awt.Dimension(110, 40));
+        Mesa.setMinimumSize(new java.awt.Dimension(110, 40));
+        Mesa.setPreferredSize(new java.awt.Dimension(110, 40));
+
+        NumOrden.setFont(new java.awt.Font("Freestyle Script", 0, 36)); // NOI18N
+        NumOrden.setForeground(new java.awt.Color(16, 19, 24));
+        NumOrden.setBorder(null);
+        NumOrden.setMaximumSize(new java.awt.Dimension(110, 40));
+        NumOrden.setMinimumSize(new java.awt.Dimension(110, 40));
+        NumOrden.setPreferredSize(new java.awt.Dimension(110, 40));
+
+        LabelOrden2.setFont(new java.awt.Font("Freestyle Script", 0, 36)); // NOI18N
+        LabelOrden2.setForeground(new java.awt.Color(255, 255, 255));
+        LabelOrden2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelOrden2.setText("N°");
+
+        LabelOrden3.setFont(new java.awt.Font("Freestyle Script", 0, 36)); // NOI18N
+        LabelOrden3.setForeground(new java.awt.Color(255, 255, 255));
+        LabelOrden3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelOrden3.setText("Mesa");
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/enviar normal.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setMaximumSize(new java.awt.Dimension(90, 33));
+        jButton1.setMinimumSize(new java.awt.Dimension(90, 33));
+        jButton1.setPreferredSize(new java.awt.Dimension(90, 33));
+        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/enviar presionado.png"))); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/enviar arriba.png"))); // NOI18N
+        jButton1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/enviar arriba.png"))); // NOI18N
+
+        javax.swing.GroupLayout PanelGrisLayout = new javax.swing.GroupLayout(PanelGris);
+        PanelGris.setLayout(PanelGrisLayout);
+        PanelGrisLayout.setHorizontalGroup(
+            PanelGrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelGrisLayout.createSequentialGroup()
+                .addGap(145, 145, 145)
+                .addComponent(LabelOrden1)
+                .addGap(18, 18, 18)
+                .addGroup(PanelGrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(NumOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(PanelGrisLayout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(LabelOrden2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(PanelGrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelGrisLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(Mesa, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(PanelGrisLayout.createSequentialGroup()
+                        .addGap(57, 57, 57)
+                        .addComponent(LabelOrden3)))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        PanelGrisLayout.setVerticalGroup(
+            PanelGrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelGrisLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addGroup(PanelGrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(PanelGrisLayout.createSequentialGroup()
+                        .addGroup(PanelGrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(LabelOrden2)
+                            .addComponent(LabelOrden3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(PanelGrisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(NumOrden, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Mesa, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(LabelOrden1))
+                .addContainerGap(47, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelGrisLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(68, 68, 68))
+        );
+
+        LabelOrden.setFont(new java.awt.Font("Freestyle Script", 0, 72)); // NOI18N
+        LabelOrden.setForeground(new java.awt.Color(255, 255, 255));
+        LabelOrden.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LabelOrden.setText("Cocina");
+
+        PanelBlanco.setMaximumSize(new java.awt.Dimension(784, 331));
+        PanelBlanco.setMinimumSize(new java.awt.Dimension(784, 331));
+        PanelBlanco.setPreferredSize(new java.awt.Dimension(784, 331));
+
+        LabelPlatos.setFont(new java.awt.Font("Freestyle Script", 0, 48)); // NOI18N
+        LabelPlatos.setForeground(new java.awt.Color(16, 19, 24));
+        LabelPlatos.setText("  N°       Orden                                       Mesa");
+
+        jTable1.setAutoCreateRowSorter(true);
+        jTable1.setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "", "", ""
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setMinWidth(110);
+            jTable1.getColumnModel().getColumn(0).setPreferredWidth(110);
+            jTable1.getColumnModel().getColumn(0).setMaxWidth(110);
+            jTable1.getColumnModel().getColumn(1).setMinWidth(547);
+            jTable1.getColumnModel().getColumn(1).setPreferredWidth(547);
+            jTable1.getColumnModel().getColumn(1).setMaxWidth(547);
+            jTable1.getColumnModel().getColumn(2).setMinWidth(110);
+            jTable1.getColumnModel().getColumn(2).setPreferredWidth(110);
+            jTable1.getColumnModel().getColumn(2).setMaxWidth(110);
+        }
+
+        javax.swing.GroupLayout PanelBlancoLayout = new javax.swing.GroupLayout(PanelBlanco);
+        PanelBlanco.setLayout(PanelBlancoLayout);
+        PanelBlancoLayout.setHorizontalGroup(
+            PanelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(LabelPlatos, javax.swing.GroupLayout.DEFAULT_SIZE, 787, Short.MAX_VALUE)
+            .addGroup(PanelBlancoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1)
+                .addContainerGap())
+        );
+        PanelBlancoLayout.setVerticalGroup(
+            PanelBlancoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(PanelBlancoLayout.createSequentialGroup()
+                .addComponent(LabelPlatos)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 257, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(PanelGris, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(355, 355, 355)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(133, 133, 133)
-                .addComponent(MenuPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
-                .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(132, 132, 132))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(420, 420, 420)
+                        .addComponent(LabelOrden))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(82, 82, 82)
+                        .addComponent(PanelBlanco, javax.swing.GroupLayout.PREFERRED_SIZE, 787, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(91, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(95, 95, 95)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(MenuPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AdministracionPP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(112, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(LabelOrden)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(PanelBlanco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(16, 16, 16)
+                .addComponent(PanelGris, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -145,8 +299,17 @@ public class Cocina extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AdministracionPP;
-    private javax.swing.JButton MenuPP;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel LabelOrden;
+    private javax.swing.JLabel LabelOrden1;
+    private javax.swing.JLabel LabelOrden2;
+    private javax.swing.JLabel LabelOrden3;
+    private javax.swing.JLabel LabelPlatos;
+    private javax.swing.JTextField Mesa;
+    private javax.swing.JTextField NumOrden;
+    private javax.swing.JPanel PanelBlanco;
+    private javax.swing.JPanel PanelGris;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

@@ -63,6 +63,11 @@ public class AdminP extends javax.swing.JFrame {
         CocinaAD.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/cocina presionado.png"))); // NOI18N
         CocinaAD.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/cocina arriba.png"))); // NOI18N
         CocinaAD.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/cocina arriba.png"))); // NOI18N
+        CocinaAD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CocinaADActionPerformed(evt);
+            }
+        });
 
         ConsumoAD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/consumo normal.png"))); // NOI18N
         ConsumoAD.setBorder(null);
@@ -136,6 +141,11 @@ public class AdminP extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void CocinaADActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CocinaADActionPerformed
+        Cocina vcocina = new Cocina();
+        vcocina.setVisible(true);
+    }//GEN-LAST:event_CocinaADActionPerformed
 
     /**
      * @param args the command line arguments

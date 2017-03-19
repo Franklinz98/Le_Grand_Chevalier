@@ -118,6 +118,9 @@
           <Image iconType="3" name="/Recursos/BotonesAdmin/cocina arriba.png"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CocinaADActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="ConsumoAD">
       <Properties>
