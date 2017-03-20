@@ -53,70 +53,70 @@ public class MBebidas extends javax.swing.JFrame {
         Menu = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        VBebida1 = new javax.swing.JLabel();
+        NBebida1 = new javax.swing.JLabel();
+        PBebida1 = new javax.swing.JLabel();
+        Bebida1 = new javax.swing.JCheckBox();
         jPanel2 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jCheckBox3 = new javax.swing.JCheckBox();
+        VBebida3 = new javax.swing.JLabel();
+        NBebida3 = new javax.swing.JLabel();
+        PBebida3 = new javax.swing.JLabel();
+        Bebida3 = new javax.swing.JCheckBox();
         jPanel3 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jCheckBox2 = new javax.swing.JCheckBox();
+        VBebida2 = new javax.swing.JLabel();
+        NBebida2 = new javax.swing.JLabel();
+        PBebida2 = new javax.swing.JLabel();
+        Bebida2 = new javax.swing.JCheckBox();
         jPanel4 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jCheckBox4 = new javax.swing.JCheckBox();
+        VBebida4 = new javax.swing.JLabel();
+        NBebida4 = new javax.swing.JLabel();
+        PBebida4 = new javax.swing.JLabel();
+        Bebida4 = new javax.swing.JCheckBox();
         jPanel5 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jCheckBox5 = new javax.swing.JCheckBox();
+        VBebida5 = new javax.swing.JLabel();
+        NBebida5 = new javax.swing.JLabel();
+        PBebida5 = new javax.swing.JLabel();
+        Bebida5 = new javax.swing.JCheckBox();
         jPanel6 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jCheckBox6 = new javax.swing.JCheckBox();
+        VBebida6 = new javax.swing.JLabel();
+        NBebida6 = new javax.swing.JLabel();
+        PBebida6 = new javax.swing.JLabel();
+        Bebida6 = new javax.swing.JCheckBox();
         jPanel7 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jCheckBox7 = new javax.swing.JCheckBox();
+        VBebida7 = new javax.swing.JLabel();
+        NBebida7 = new javax.swing.JLabel();
+        PBebida7 = new javax.swing.JLabel();
+        Bebida7 = new javax.swing.JCheckBox();
         jPanel8 = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jCheckBox8 = new javax.swing.JCheckBox();
+        VBebida8 = new javax.swing.JLabel();
+        NBebida8 = new javax.swing.JLabel();
+        PBebida8 = new javax.swing.JLabel();
+        Bebida8 = new javax.swing.JCheckBox();
         jPanel9 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jCheckBox9 = new javax.swing.JCheckBox();
+        VBebida9 = new javax.swing.JLabel();
+        NBebida9 = new javax.swing.JLabel();
+        PBebida9 = new javax.swing.JLabel();
+        Bebida9 = new javax.swing.JCheckBox();
         jPanel11 = new javax.swing.JPanel();
         jPanel23 = new javax.swing.JPanel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jCheckBox11 = new javax.swing.JCheckBox();
+        VBebida11 = new javax.swing.JLabel();
+        NBebida11 = new javax.swing.JLabel();
+        PBebida11 = new javax.swing.JLabel();
+        Bebida11 = new javax.swing.JCheckBox();
         jPanel10 = new javax.swing.JPanel();
         jPanel22 = new javax.swing.JPanel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jCheckBox10 = new javax.swing.JCheckBox();
+        VBebida10 = new javax.swing.JLabel();
+        NBebida10 = new javax.swing.JLabel();
+        PBebida10 = new javax.swing.JLabel();
+        Bebida10 = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
@@ -221,34 +221,34 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel13.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel13.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Agua.png"))); // NOI18N
+        VBebida1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Agua.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Agua");
+        NBebida1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida1.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida1.setText("Agua");
 
-        jLabel14.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("$ 3000");
+        PBebida1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida1.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida1.setText("$ 3000");
 
-        jCheckBox1.setBorder(null);
-        jCheckBox1.setContentAreaFilled(false);
-        jCheckBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida1.setBorder(null);
+        Bebida1.setContentAreaFilled(false);
+        Bebida1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -259,9 +259,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel14)
-                            .addComponent(jCheckBox1)))
+                            .addComponent(NBebida1)
+                            .addComponent(PBebida1)
+                            .addComponent(Bebida1)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -273,11 +273,11 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
+                .addComponent(NBebida1)
                 .addGap(6, 6, 6)
-                .addComponent(jLabel14)
+                .addComponent(PBebida1)
                 .addGap(6, 6, 6)
-                .addComponent(jCheckBox1)
+                .addComponent(Bebida1)
                 .addGap(15, 15, 15))
         );
 
@@ -290,34 +290,34 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel15.setMaximumSize(new java.awt.Dimension(146, 146));
         jPanel15.setMinimumSize(new java.awt.Dimension(146, 146));
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Cocktail Kir.png"))); // NOI18N
+        VBebida3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Cocktail Kir.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Cocktail Kir");
+        NBebida3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida3.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida3.setText("Cocktail Kir");
 
-        jLabel16.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("$ 32 500");
+        PBebida3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida3.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida3.setText("$ 32 500");
 
-        jCheckBox3.setBorder(null);
-        jCheckBox3.setContentAreaFilled(false);
-        jCheckBox3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox3.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida3.setBorder(null);
+        Bebida3.setContentAreaFilled(false);
+        Bebida3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida3.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -329,9 +329,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel16))
+                            .addComponent(Bebida3)
+                            .addComponent(NBebida3)
+                            .addComponent(PBebida3))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -341,11 +341,11 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(NBebida3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16)
+                .addComponent(PBebida3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox3)
+                .addComponent(Bebida3)
                 .addGap(15, 15, 15))
         );
 
@@ -358,34 +358,34 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel14.setMaximumSize(new java.awt.Dimension(146, 146));
         jPanel14.setMinimumSize(new java.awt.Dimension(146, 146));
 
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/baiser français.png"))); // NOI18N
+        VBebida2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/baiser français.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Baiser Français");
+        NBebida2.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida2.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida2.setText("Baiser Français");
 
-        jLabel15.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("$ 27 200");
+        PBebida2.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida2.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida2.setText("$ 27 200");
 
-        jCheckBox2.setBorder(null);
-        jCheckBox2.setContentAreaFilled(false);
-        jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida2.setBorder(null);
+        Bebida2.setContentAreaFilled(false);
+        Bebida2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -397,9 +397,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel15))
+                            .addComponent(Bebida2)
+                            .addComponent(NBebida2)
+                            .addComponent(PBebida2))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -409,11 +409,11 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
+                .addComponent(NBebida2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel15)
+                .addComponent(PBebida2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox2)
+                .addComponent(Bebida2)
                 .addGap(15, 15, 15))
         );
 
@@ -427,34 +427,34 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel16.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel16.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Canard Authentic Non Vintage.png"))); // NOI18N
+        VBebida4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Canard Authentic Non Vintage.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Canard Authentic Non Vintage");
+        NBebida4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida4.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida4.setText("Canard Authentic Non Vintage");
 
-        jLabel17.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("$ 63 000");
+        PBebida4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida4.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida4.setText("$ 63 000");
 
-        jCheckBox4.setBorder(null);
-        jCheckBox4.setContentAreaFilled(false);
-        jCheckBox4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox4.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida4.setBorder(null);
+        Bebida4.setContentAreaFilled(false);
+        Bebida4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida4.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -466,9 +466,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel17)
-                            .addComponent(jCheckBox4))
+                            .addComponent(NBebida4)
+                            .addComponent(PBebida4)
+                            .addComponent(Bebida4))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -478,11 +478,11 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(NBebida4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel17)
+                .addComponent(PBebida4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox4)
+                .addComponent(Bebida4)
                 .addGap(15, 15, 15))
         );
 
@@ -496,34 +496,34 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel17.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel17.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Champagne Laurent perrier.png"))); // NOI18N
+        VBebida5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Champagne Laurent perrier.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
         jPanel17Layout.setHorizontalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Laurent perrier");
+        NBebida5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida5.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida5.setText("Laurent perrier");
 
-        jLabel18.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("$ 48 900");
+        PBebida5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida5.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida5.setText("$ 48 900");
 
-        jCheckBox5.setBorder(null);
-        jCheckBox5.setContentAreaFilled(false);
-        jCheckBox5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox5.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox5.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida5.setBorder(null);
+        Bebida5.setContentAreaFilled(false);
+        Bebida5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida5.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida5.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -535,9 +535,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox5)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel18))
+                            .addComponent(Bebida5)
+                            .addComponent(NBebida5)
+                            .addComponent(PBebida5))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -547,11 +547,11 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(NBebida5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18)
+                .addComponent(PBebida5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox5)
+                .addComponent(Bebida5)
                 .addGap(15, 15, 15))
         );
 
@@ -565,34 +565,34 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel18.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel18.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Champagne Nicolas Feuillatte Reserve.png"))); // NOI18N
+        VBebida6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Champagne Nicolas Feuillatte Reserve.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
         jPanel18.setLayout(jPanel18Layout);
         jPanel18Layout.setHorizontalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Nicolas Feuillatte Reserve");
+        NBebida6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida6.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida6.setText("Nicolas Feuillatte Reserve");
 
-        jLabel19.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("$ 84 500");
+        PBebida6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida6.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida6.setText("$ 84 500");
 
-        jCheckBox6.setBorder(null);
-        jCheckBox6.setContentAreaFilled(false);
-        jCheckBox6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox6.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox6.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida6.setBorder(null);
+        Bebida6.setContentAreaFilled(false);
+        Bebida6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida6.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida6.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -604,9 +604,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox6)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel19))
+                            .addComponent(Bebida6)
+                            .addComponent(NBebida6)
+                            .addComponent(PBebida6))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -616,11 +616,11 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(NBebida6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel19)
+                .addComponent(PBebida6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox6)
+                .addComponent(Bebida6)
                 .addGap(15, 15, 15))
         );
 
@@ -634,35 +634,35 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel19.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel19.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Château La Coste.png"))); // NOI18N
+        VBebida7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Château La Coste.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel10.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Château La Coste");
-        jLabel10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        NBebida7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida7.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida7.setText("Château La Coste");
+        NBebida7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jLabel20.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("$ 59 400");
+        PBebida7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida7.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida7.setText("$ 59 400");
 
-        jCheckBox7.setBorder(null);
-        jCheckBox7.setContentAreaFilled(false);
-        jCheckBox7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox7.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida7.setBorder(null);
+        Bebida7.setContentAreaFilled(false);
+        Bebida7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida7.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -674,9 +674,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox7)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel20))
+                            .addComponent(Bebida7)
+                            .addComponent(NBebida7)
+                            .addComponent(PBebida7))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -686,11 +686,11 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel10)
+                .addComponent(NBebida7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel20)
+                .addComponent(PBebida7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox7)
+                .addComponent(Bebida7)
                 .addGap(15, 15, 15))
         );
 
@@ -704,34 +704,34 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel20.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel20.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Château Simone Palette Rouge.png"))); // NOI18N
+        VBebida8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Château Simone Palette Rouge.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel9.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Château Simone Palette Rouge");
+        NBebida8.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida8.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida8.setText("Château Simone Palette Rouge");
 
-        jLabel21.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("$ 93 500");
+        PBebida8.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida8.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida8.setText("$ 93 500");
 
-        jCheckBox8.setBorder(null);
-        jCheckBox8.setContentAreaFilled(false);
-        jCheckBox8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox8.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox8.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox8.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida8.setBorder(null);
+        Bebida8.setContentAreaFilled(false);
+        Bebida8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida8.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida8.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida8.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -743,9 +743,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox8)
-                            .addComponent(jLabel9)
-                            .addComponent(jLabel21))
+                            .addComponent(Bebida8)
+                            .addComponent(NBebida8)
+                            .addComponent(PBebida8))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -755,11 +755,11 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel9)
+                .addComponent(NBebida8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel21)
+                .addComponent(PBebida8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox8)
+                .addComponent(Bebida8)
                 .addGap(15, 15, 15))
         );
 
@@ -773,34 +773,34 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel21.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel21.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/vin blanc de bourgogne.png"))); // NOI18N
+        VBebida9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/vin blanc de bourgogne.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
         jPanel21Layout.setHorizontalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel8.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Vin Blanc de Bourgogne");
+        NBebida9.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida9.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida9.setText("Vin Blanc de Bourgogne");
 
-        jLabel22.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("$ 103 200");
+        PBebida9.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida9.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida9.setText("$ 103 200");
 
-        jCheckBox9.setBorder(null);
-        jCheckBox9.setContentAreaFilled(false);
-        jCheckBox9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox9.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox9.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox9.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida9.setBorder(null);
+        Bebida9.setContentAreaFilled(false);
+        Bebida9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida9.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida9.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida9.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -812,9 +812,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox9)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel22))
+                            .addComponent(Bebida9)
+                            .addComponent(NBebida9)
+                            .addComponent(PBebida9))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -824,11 +824,11 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
+                .addComponent(NBebida9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel22)
+                .addComponent(PBebida9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox9)
+                .addComponent(Bebida9)
                 .addGap(15, 15, 15))
         );
 
@@ -842,34 +842,34 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel23.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel23.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Domaine Leroy Musigny.png"))); // NOI18N
+        VBebida11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Domaine Leroy Musigny.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
         jPanel23.setLayout(jPanel23Layout);
         jPanel23Layout.setHorizontalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel23Layout.setVerticalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel12.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("Domaine Leroy Musigny");
+        NBebida11.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida11.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida11.setText("Domaine Leroy Musigny");
 
-        jLabel24.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setText("$ 119 100");
+        PBebida11.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida11.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida11.setText("$ 119 100");
 
-        jCheckBox11.setBorder(null);
-        jCheckBox11.setContentAreaFilled(false);
-        jCheckBox11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox11.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox11.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox11.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox11.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida11.setBorder(null);
+        Bebida11.setContentAreaFilled(false);
+        Bebida11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida11.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida11.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida11.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida11.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -881,9 +881,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox11)
-                            .addComponent(jLabel12)
-                            .addComponent(jLabel24))
+                            .addComponent(Bebida11)
+                            .addComponent(NBebida11)
+                            .addComponent(PBebida11))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -893,44 +893,44 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel12)
+                .addComponent(NBebida11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel24)
+                .addComponent(PBebida11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox11)
+                .addComponent(Bebida11)
                 .addGap(15, 15, 15))
         );
 
         jPanel10.setBackground(new java.awt.Color(16, 19, 24));
 
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Domaine Corton Charlemagne.png"))); // NOI18N
+        VBebida10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Domaine Corton Charlemagne.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
         jPanel22Layout.setHorizontalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VBebida10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel13.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Domaine Corton Charlemagne");
+        NBebida10.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NBebida10.setForeground(new java.awt.Color(255, 255, 255));
+        NBebida10.setText("Domaine Corton Charlemagne");
 
-        jLabel23.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("$ 68 900");
+        PBebida10.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PBebida10.setForeground(new java.awt.Color(255, 255, 255));
+        PBebida10.setText("$ 68 900");
 
-        jCheckBox10.setBorder(null);
-        jCheckBox10.setContentAreaFilled(false);
-        jCheckBox10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox10.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox10.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox10.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox10.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida10.setBorder(null);
+        Bebida10.setContentAreaFilled(false);
+        Bebida10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Bebida10.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida10.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Bebida10.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Bebida10.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -942,9 +942,9 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox10)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel23))
+                            .addComponent(Bebida10)
+                            .addComponent(NBebida10)
+                            .addComponent(PBebida10))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -954,11 +954,11 @@ public class MBebidas extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel13)
+                .addComponent(NBebida10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel23)
+                .addComponent(PBebida10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox10)
+                .addComponent(Bebida10)
                 .addGap(15, 15, 15))
         );
 
@@ -1110,59 +1110,59 @@ public class MBebidas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox Bebida1;
+    private javax.swing.JCheckBox Bebida10;
+    private javax.swing.JCheckBox Bebida11;
+    private javax.swing.JCheckBox Bebida2;
+    private javax.swing.JCheckBox Bebida3;
+    private javax.swing.JCheckBox Bebida4;
+    private javax.swing.JCheckBox Bebida5;
+    private javax.swing.JCheckBox Bebida6;
+    private javax.swing.JCheckBox Bebida7;
+    private javax.swing.JCheckBox Bebida8;
+    private javax.swing.JCheckBox Bebida9;
     private javax.swing.JButton CocinaAD;
     private javax.swing.JButton CocinaAD1;
     private javax.swing.JLabel LabelOrden;
     private javax.swing.JLabel LabelPlatos;
     private javax.swing.JPanel Menu;
+    private javax.swing.JLabel NBebida1;
+    private javax.swing.JLabel NBebida10;
+    private javax.swing.JLabel NBebida11;
+    private javax.swing.JLabel NBebida2;
+    private javax.swing.JLabel NBebida3;
+    private javax.swing.JLabel NBebida4;
+    private javax.swing.JLabel NBebida5;
+    private javax.swing.JLabel NBebida6;
+    private javax.swing.JLabel NBebida7;
+    private javax.swing.JLabel NBebida8;
+    private javax.swing.JLabel NBebida9;
+    private javax.swing.JLabel PBebida1;
+    private javax.swing.JLabel PBebida10;
+    private javax.swing.JLabel PBebida11;
+    private javax.swing.JLabel PBebida2;
+    private javax.swing.JLabel PBebida3;
+    private javax.swing.JLabel PBebida4;
+    private javax.swing.JLabel PBebida5;
+    private javax.swing.JLabel PBebida6;
+    private javax.swing.JLabel PBebida7;
+    private javax.swing.JLabel PBebida8;
+    private javax.swing.JLabel PBebida9;
     private javax.swing.JPanel PanelRojo;
     private javax.swing.JScrollPane Scrollp;
+    private javax.swing.JLabel VBebida1;
+    private javax.swing.JLabel VBebida10;
+    private javax.swing.JLabel VBebida11;
+    private javax.swing.JLabel VBebida2;
+    private javax.swing.JLabel VBebida3;
+    private javax.swing.JLabel VBebida4;
+    private javax.swing.JLabel VBebida5;
+    private javax.swing.JLabel VBebida6;
+    private javax.swing.JLabel VBebida7;
+    private javax.swing.JLabel VBebida8;
+    private javax.swing.JLabel VBebida9;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox10;
-    private javax.swing.JCheckBox jCheckBox11;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
-    private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JCheckBox jCheckBox8;
-    private javax.swing.JCheckBox jCheckBox9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;

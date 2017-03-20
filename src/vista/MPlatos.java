@@ -53,76 +53,76 @@ public class MPlatos extends javax.swing.JFrame {
         Menu = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
-        Plato1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        VPlato1 = new javax.swing.JLabel();
+        NPlato1 = new javax.swing.JLabel();
+        PPlato1 = new javax.swing.JLabel();
+        Plato1 = new javax.swing.JCheckBox();
         jPanel2 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
-        Plato3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jCheckBox3 = new javax.swing.JCheckBox();
+        VPlato3 = new javax.swing.JLabel();
+        NPlato3 = new javax.swing.JLabel();
+        PPlato3 = new javax.swing.JLabel();
+        Plato3 = new javax.swing.JCheckBox();
         jPanel3 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
-        Plato2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jCheckBox2 = new javax.swing.JCheckBox();
+        VPlato2 = new javax.swing.JLabel();
+        NPlato2 = new javax.swing.JLabel();
+        PPlato2 = new javax.swing.JLabel();
+        Plato2 = new javax.swing.JCheckBox();
         jPanel4 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jCheckBox4 = new javax.swing.JCheckBox();
+        VPlato4 = new javax.swing.JLabel();
+        NPlato4 = new javax.swing.JLabel();
+        PPlato4 = new javax.swing.JLabel();
+        Plato4 = new javax.swing.JCheckBox();
         jPanel5 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jCheckBox5 = new javax.swing.JCheckBox();
+        VPlato5 = new javax.swing.JLabel();
+        NPlato5 = new javax.swing.JLabel();
+        PPlato5 = new javax.swing.JLabel();
+        Plato5 = new javax.swing.JCheckBox();
         jPanel6 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jCheckBox6 = new javax.swing.JCheckBox();
+        VPlato6 = new javax.swing.JLabel();
+        NPlato6 = new javax.swing.JLabel();
+        PPlato6 = new javax.swing.JLabel();
+        Plato6 = new javax.swing.JCheckBox();
         jPanel7 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jCheckBox7 = new javax.swing.JCheckBox();
+        VPlato7 = new javax.swing.JLabel();
+        NPlato7 = new javax.swing.JLabel();
+        PPlato7 = new javax.swing.JLabel();
+        Plato7 = new javax.swing.JCheckBox();
         jPanel8 = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jCheckBox8 = new javax.swing.JCheckBox();
+        VPlato8 = new javax.swing.JLabel();
+        NPlato8 = new javax.swing.JLabel();
+        PPlato8 = new javax.swing.JLabel();
+        Plato8 = new javax.swing.JCheckBox();
         jPanel9 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jCheckBox9 = new javax.swing.JCheckBox();
+        VPlato9 = new javax.swing.JLabel();
+        NPlato9 = new javax.swing.JLabel();
+        PPlato9 = new javax.swing.JLabel();
+        Plato9 = new javax.swing.JCheckBox();
         jPanel11 = new javax.swing.JPanel();
         jPanel23 = new javax.swing.JPanel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jCheckBox11 = new javax.swing.JCheckBox();
+        VPlato11 = new javax.swing.JLabel();
+        NPlato11 = new javax.swing.JLabel();
+        PPlato11 = new javax.swing.JLabel();
+        Plato11 = new javax.swing.JCheckBox();
         jPanel12 = new javax.swing.JPanel();
         jPanel24 = new javax.swing.JPanel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jCheckBox12 = new javax.swing.JCheckBox();
+        VPlato12 = new javax.swing.JLabel();
+        NPlato12 = new javax.swing.JLabel();
+        PPlato12 = new javax.swing.JLabel();
+        Plato12 = new javax.swing.JCheckBox();
         jPanel10 = new javax.swing.JPanel();
         jPanel22 = new javax.swing.JPanel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jCheckBox10 = new javax.swing.JCheckBox();
+        VPlato10 = new javax.swing.JLabel();
+        NPlato10 = new javax.swing.JLabel();
+        PPlato10 = new javax.swing.JLabel();
+        Plato10 = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
@@ -227,34 +227,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel13.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel13.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        Plato1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Bar de ligne.png"))); // NOI18N
+        VPlato1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Bar de ligne.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Plato1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Plato1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Bar de Ligne");
+        NPlato1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato1.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato1.setText("Bar de Ligne");
 
-        jLabel14.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("$ 423 000");
+        PPlato1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato1.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato1.setText("$ 423 000");
 
-        jCheckBox1.setBorder(null);
-        jCheckBox1.setContentAreaFilled(false);
-        jCheckBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato1.setBorder(null);
+        Plato1.setContentAreaFilled(false);
+        Plato1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -266,9 +266,9 @@ public class MPlatos extends javax.swing.JFrame {
                     .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel14)
-                            .addComponent(jCheckBox1))
+                            .addComponent(NPlato1)
+                            .addComponent(PPlato1)
+                            .addComponent(Plato1))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -278,11 +278,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
+                .addComponent(NPlato1)
                 .addGap(6, 6, 6)
-                .addComponent(jLabel14)
+                .addComponent(PPlato1)
                 .addGap(6, 6, 6)
-                .addComponent(jCheckBox1)
+                .addComponent(Plato1)
                 .addGap(15, 15, 15))
         );
 
@@ -295,34 +295,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel15.setMaximumSize(new java.awt.Dimension(146, 146));
         jPanel15.setMinimumSize(new java.awt.Dimension(146, 146));
 
-        Plato3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Caille de Race.png"))); // NOI18N
+        VPlato3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Caille de Race.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Plato3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Plato3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Caille de Race");
+        NPlato3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato3.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato3.setText("Caille de Race");
 
-        jLabel16.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("$ 329 000");
+        PPlato3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato3.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato3.setText("$ 329 000");
 
-        jCheckBox3.setBorder(null);
-        jCheckBox3.setContentAreaFilled(false);
-        jCheckBox3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox3.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato3.setBorder(null);
+        Plato3.setContentAreaFilled(false);
+        Plato3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato3.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -332,9 +332,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel16))
+                    .addComponent(Plato3)
+                    .addComponent(NPlato3)
+                    .addComponent(PPlato3))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -343,11 +343,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(NPlato3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16)
+                .addComponent(PPlato3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox3)
+                .addComponent(Plato3)
                 .addGap(15, 15, 15))
         );
 
@@ -360,34 +360,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel14.setMaximumSize(new java.awt.Dimension(146, 146));
         jPanel14.setMinimumSize(new java.awt.Dimension(146, 146));
 
-        Plato2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Blanc de turbot.png"))); // NOI18N
+        VPlato2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Blanc de turbot.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Plato2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Plato2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Blanc de Turbot");
+        NPlato2.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato2.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato2.setText("Blanc de Turbot");
 
-        jLabel15.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("$ 438 700");
+        PPlato2.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato2.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato2.setText("$ 438 700");
 
-        jCheckBox2.setBorder(null);
-        jCheckBox2.setContentAreaFilled(false);
-        jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato2.setBorder(null);
+        Plato2.setContentAreaFilled(false);
+        Plato2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -397,9 +397,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox2)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel15))
+                    .addComponent(Plato2)
+                    .addComponent(NPlato2)
+                    .addComponent(PPlato2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -408,11 +408,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
+                .addComponent(NPlato2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel15)
+                .addComponent(PPlato2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox2)
+                .addComponent(Plato2)
                 .addGap(15, 15, 15))
         );
 
@@ -426,34 +426,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel16.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel16.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Crêpes au Sarrasin.png"))); // NOI18N
+        VPlato4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Crêpes au Sarrasin.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Crêpes au Sarrasin");
+        NPlato4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato4.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato4.setText("Crêpes au Sarrasin");
 
-        jLabel17.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("$ 287 500");
+        PPlato4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato4.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato4.setText("$ 287 500");
 
-        jCheckBox4.setBorder(null);
-        jCheckBox4.setContentAreaFilled(false);
-        jCheckBox4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox4.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato4.setBorder(null);
+        Plato4.setContentAreaFilled(false);
+        Plato4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato4.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -463,9 +463,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel17)
-                    .addComponent(jCheckBox4))
+                    .addComponent(NPlato4)
+                    .addComponent(PPlato4)
+                    .addComponent(Plato4))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -474,11 +474,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(NPlato4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel17)
+                .addComponent(PPlato4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox4)
+                .addComponent(Plato4)
                 .addGap(15, 15, 15))
         );
 
@@ -492,34 +492,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel17.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel17.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Gratinée D'oignons.png"))); // NOI18N
+        VPlato5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Gratinée D'oignons.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
         jPanel17Layout.setHorizontalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Gratinée d'Oignons");
+        NPlato5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato5.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato5.setText("Gratinée d'Oignons");
 
-        jLabel18.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("$ 219 400");
+        PPlato5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato5.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato5.setText("$ 219 400");
 
-        jCheckBox5.setBorder(null);
-        jCheckBox5.setContentAreaFilled(false);
-        jCheckBox5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox5.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox5.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato5.setBorder(null);
+        Plato5.setContentAreaFilled(false);
+        Plato5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato5.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato5.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -529,9 +529,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox5)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel18))
+                    .addComponent(Plato5)
+                    .addComponent(NPlato5)
+                    .addComponent(PPlato5))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
@@ -540,11 +540,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(NPlato5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18)
+                .addComponent(PPlato5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox5)
+                .addComponent(Plato5)
                 .addGap(15, 15, 15))
         );
 
@@ -558,34 +558,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel18.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel18.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Hachis Parmentier.png"))); // NOI18N
+        VPlato6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Hachis Parmentier.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
         jPanel18.setLayout(jPanel18Layout);
         jPanel18Layout.setHorizontalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Hachis Parmentier");
+        NPlato6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato6.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato6.setText("Hachis Parmentier");
 
-        jLabel19.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("$ 268 800");
+        PPlato6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato6.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato6.setText("$ 268 800");
 
-        jCheckBox6.setBorder(null);
-        jCheckBox6.setContentAreaFilled(false);
-        jCheckBox6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox6.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox6.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato6.setBorder(null);
+        Plato6.setContentAreaFilled(false);
+        Plato6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato6.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato6.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -595,9 +595,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox6)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel19))
+                    .addComponent(Plato6)
+                    .addComponent(NPlato6)
+                    .addComponent(PPlato6))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -606,11 +606,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(NPlato6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel19)
+                .addComponent(PPlato6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox6)
+                .addComponent(Plato6)
                 .addGap(15, 15, 15))
         );
 
@@ -624,34 +624,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel19.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel19.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Homard Bleu.png"))); // NOI18N
+        VPlato7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Homard Bleu.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel10.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Homard Bleu");
+        NPlato7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato7.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato7.setText("Homard Bleu");
 
-        jLabel20.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("$ 432 500");
+        PPlato7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato7.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato7.setText("$ 432 500");
 
-        jCheckBox7.setBorder(null);
-        jCheckBox7.setContentAreaFilled(false);
-        jCheckBox7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox7.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato7.setBorder(null);
+        Plato7.setContentAreaFilled(false);
+        Plato7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato7.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -661,9 +661,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox7)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel20))
+                    .addComponent(Plato7)
+                    .addComponent(NPlato7)
+                    .addComponent(PPlato7))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -672,11 +672,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel10)
+                .addComponent(NPlato7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel20)
+                .addComponent(PPlato7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox7)
+                .addComponent(Plato7)
                 .addGap(15, 15, 15))
         );
 
@@ -690,34 +690,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel20.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel20.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Langoustine Bretonne.png"))); // NOI18N
+        VPlato8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Langoustine Bretonne.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel20Layout = new javax.swing.GroupLayout(jPanel20);
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel9.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText("Langoustine Bretonne");
+        NPlato8.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato8.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato8.setText("Langoustine Bretonne");
 
-        jLabel21.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setText("$ 438 700");
+        PPlato8.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato8.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato8.setText("$ 438 700");
 
-        jCheckBox8.setBorder(null);
-        jCheckBox8.setContentAreaFilled(false);
-        jCheckBox8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox8.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox8.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox8.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato8.setBorder(null);
+        Plato8.setContentAreaFilled(false);
+        Plato8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato8.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato8.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato8.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato8.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -727,9 +727,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox8)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel21))
+                    .addComponent(Plato8)
+                    .addComponent(NPlato8)
+                    .addComponent(PPlato8))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
@@ -738,11 +738,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel9)
+                .addComponent(NPlato8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel21)
+                .addComponent(PPlato8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox8)
+                .addComponent(Plato8)
                 .addGap(15, 15, 15))
         );
 
@@ -756,34 +756,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel21.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel21.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Noix de Ris de Veau.png"))); // NOI18N
+        VPlato9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Noix de Ris de Veau.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
         jPanel21.setLayout(jPanel21Layout);
         jPanel21Layout.setHorizontalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel21Layout.setVerticalGroup(
             jPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel8.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Noix de Ris de Veau");
+        NPlato9.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato9.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato9.setText("Noix de Ris de Veau");
 
-        jLabel22.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setText("$ 376 040");
+        PPlato9.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato9.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato9.setText("$ 376 040");
 
-        jCheckBox9.setBorder(null);
-        jCheckBox9.setContentAreaFilled(false);
-        jCheckBox9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox9.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox9.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox9.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato9.setBorder(null);
+        Plato9.setContentAreaFilled(false);
+        Plato9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato9.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato9.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato9.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato9.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -793,9 +793,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox9)
-                    .addComponent(jLabel8)
-                    .addComponent(jLabel22))
+                    .addComponent(Plato9)
+                    .addComponent(NPlato9)
+                    .addComponent(PPlato9))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
@@ -804,11 +804,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8)
+                .addComponent(NPlato9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel22)
+                .addComponent(PPlato9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox9)
+                .addComponent(Plato9)
                 .addGap(15, 15, 15))
         );
 
@@ -822,34 +822,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel23.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel23.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Semoule D’agneau.png"))); // NOI18N
+        VPlato11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Semoule D’agneau.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
         jPanel23.setLayout(jPanel23Layout);
         jPanel23Layout.setHorizontalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel23Layout.setVerticalGroup(
             jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel12.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText("Semoule d’Agneau");
+        NPlato11.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato11.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato11.setText("Semoule d’Agneau");
 
-        jLabel24.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setText("$ 297 700");
+        PPlato11.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato11.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato11.setText("$ 297 700");
 
-        jCheckBox11.setBorder(null);
-        jCheckBox11.setContentAreaFilled(false);
-        jCheckBox11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox11.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox11.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox11.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox11.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato11.setBorder(null);
+        Plato11.setContentAreaFilled(false);
+        Plato11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato11.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato11.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato11.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato11.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -859,9 +859,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox11)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel24))
+                    .addComponent(Plato11)
+                    .addComponent(NPlato11)
+                    .addComponent(PPlato11))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
@@ -870,11 +870,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel12)
+                .addComponent(NPlato11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel24)
+                .addComponent(PPlato11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox11)
+                .addComponent(Plato11)
                 .addGap(15, 15, 15))
         );
 
@@ -888,34 +888,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel24.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel24.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Soupe à L’oignon.png"))); // NOI18N
+        VPlato12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Soupe à L’oignon.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
         jPanel24.setLayout(jPanel24Layout);
         jPanel24Layout.setHorizontalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel24Layout.setVerticalGroup(
             jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel37, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel11.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Soupe à L’oignon");
+        NPlato12.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato12.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato12.setText("Soupe à L’oignon");
 
-        jLabel25.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel25.setText("$ 136 400");
+        PPlato12.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato12.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato12.setText("$ 136 400");
 
-        jCheckBox12.setBorder(null);
-        jCheckBox12.setContentAreaFilled(false);
-        jCheckBox12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox12.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox12.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox12.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox12.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato12.setBorder(null);
+        Plato12.setContentAreaFilled(false);
+        Plato12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato12.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato12.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato12.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato12.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -925,9 +925,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox12)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel25))
+                    .addComponent(Plato12)
+                    .addComponent(NPlato12)
+                    .addComponent(PPlato12))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
@@ -936,11 +936,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel11)
+                .addComponent(NPlato12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel25)
+                .addComponent(PPlato12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox12)
+                .addComponent(Plato12)
                 .addGap(15, 15, 15))
         );
 
@@ -948,34 +948,34 @@ public class MPlatos extends javax.swing.JFrame {
         jPanel10.setMaximumSize(new java.awt.Dimension(166, 255));
         jPanel10.setMinimumSize(new java.awt.Dimension(166, 255));
 
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Poêlée de Sots.png"))); // NOI18N
+        VPlato10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Platos/Poêlée de Sots.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
         jPanel22.setLayout(jPanel22Layout);
         jPanel22Layout.setHorizontalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel22Layout.setVerticalGroup(
             jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPlato10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel13.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("Poêlée de Sots");
+        NPlato10.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPlato10.setForeground(new java.awt.Color(255, 255, 255));
+        NPlato10.setText("Poêlée de Sots");
 
-        jLabel23.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("$ 362 300");
+        PPlato10.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPlato10.setForeground(new java.awt.Color(255, 255, 255));
+        PPlato10.setText("$ 362 300");
 
-        jCheckBox10.setBorder(null);
-        jCheckBox10.setContentAreaFilled(false);
-        jCheckBox10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox10.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox10.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox10.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox10.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato10.setBorder(null);
+        Plato10.setContentAreaFilled(false);
+        Plato10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Plato10.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato10.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Plato10.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Plato10.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -987,9 +987,9 @@ public class MPlatos extends javax.swing.JFrame {
                     .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox10)
-                            .addComponent(jLabel13)
-                            .addComponent(jLabel23))
+                            .addComponent(Plato10)
+                            .addComponent(NPlato10)
+                            .addComponent(PPlato10))
                         .addGap(75, 75, 75)))
                 .addGap(10, 10, 10))
         );
@@ -999,11 +999,11 @@ public class MPlatos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel13)
+                .addComponent(NPlato10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel23)
+                .addComponent(PPlato10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox10)
+                .addComponent(Plato10)
                 .addGap(15, 15, 15))
         );
 
@@ -1158,58 +1158,58 @@ public class MPlatos extends javax.swing.JFrame {
     private javax.swing.JLabel LabelOrden;
     private javax.swing.JLabel LabelPlatos;
     private javax.swing.JPanel Menu;
+    private javax.swing.JLabel NPlato1;
+    private javax.swing.JLabel NPlato10;
+    private javax.swing.JLabel NPlato11;
+    private javax.swing.JLabel NPlato12;
+    private javax.swing.JLabel NPlato2;
+    private javax.swing.JLabel NPlato3;
+    private javax.swing.JLabel NPlato4;
+    private javax.swing.JLabel NPlato5;
+    private javax.swing.JLabel NPlato6;
+    private javax.swing.JLabel NPlato7;
+    private javax.swing.JLabel NPlato8;
+    private javax.swing.JLabel NPlato9;
+    private javax.swing.JLabel PPlato1;
+    private javax.swing.JLabel PPlato10;
+    private javax.swing.JLabel PPlato11;
+    private javax.swing.JLabel PPlato12;
+    private javax.swing.JLabel PPlato2;
+    private javax.swing.JLabel PPlato3;
+    private javax.swing.JLabel PPlato4;
+    private javax.swing.JLabel PPlato5;
+    private javax.swing.JLabel PPlato6;
+    private javax.swing.JLabel PPlato7;
+    private javax.swing.JLabel PPlato8;
+    private javax.swing.JLabel PPlato9;
     private javax.swing.JPanel PanelRojo;
-    private javax.swing.JLabel Plato1;
-    private javax.swing.JLabel Plato2;
-    private javax.swing.JLabel Plato3;
+    private javax.swing.JCheckBox Plato1;
+    private javax.swing.JCheckBox Plato10;
+    private javax.swing.JCheckBox Plato11;
+    private javax.swing.JCheckBox Plato12;
+    private javax.swing.JCheckBox Plato2;
+    private javax.swing.JCheckBox Plato3;
+    private javax.swing.JCheckBox Plato4;
+    private javax.swing.JCheckBox Plato5;
+    private javax.swing.JCheckBox Plato6;
+    private javax.swing.JCheckBox Plato7;
+    private javax.swing.JCheckBox Plato8;
+    private javax.swing.JCheckBox Plato9;
     private javax.swing.JScrollPane Scrollp;
+    private javax.swing.JLabel VPlato1;
+    private javax.swing.JLabel VPlato10;
+    private javax.swing.JLabel VPlato11;
+    private javax.swing.JLabel VPlato12;
+    private javax.swing.JLabel VPlato2;
+    private javax.swing.JLabel VPlato3;
+    private javax.swing.JLabel VPlato4;
+    private javax.swing.JLabel VPlato5;
+    private javax.swing.JLabel VPlato6;
+    private javax.swing.JLabel VPlato7;
+    private javax.swing.JLabel VPlato8;
+    private javax.swing.JLabel VPlato9;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox10;
-    private javax.swing.JCheckBox jCheckBox11;
-    private javax.swing.JCheckBox jCheckBox12;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
-    private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JCheckBox jCheckBox8;
-    private javax.swing.JCheckBox jCheckBox9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;

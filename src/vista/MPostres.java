@@ -53,46 +53,46 @@ public class MPostres extends javax.swing.JFrame {
         Menu = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        VPostre1 = new javax.swing.JLabel();
+        NPostre1 = new javax.swing.JLabel();
+        PPostre1 = new javax.swing.JLabel();
+        Postre1 = new javax.swing.JCheckBox();
         jPanel2 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jCheckBox3 = new javax.swing.JCheckBox();
+        VPostre3 = new javax.swing.JLabel();
+        NPostre3 = new javax.swing.JLabel();
+        PPostre3 = new javax.swing.JLabel();
+        Postre3 = new javax.swing.JCheckBox();
         jPanel3 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jCheckBox2 = new javax.swing.JCheckBox();
+        VPostre2 = new javax.swing.JLabel();
+        NPostre2 = new javax.swing.JLabel();
+        PPostre2 = new javax.swing.JLabel();
+        Postre2 = new javax.swing.JCheckBox();
         jPanel4 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jCheckBox4 = new javax.swing.JCheckBox();
+        VPostre4 = new javax.swing.JLabel();
+        NPostre4 = new javax.swing.JLabel();
+        PPostre4 = new javax.swing.JLabel();
+        Postre4 = new javax.swing.JCheckBox();
         jPanel5 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jCheckBox5 = new javax.swing.JCheckBox();
+        VPostre5 = new javax.swing.JLabel();
+        NPostre5 = new javax.swing.JLabel();
+        PPostre5 = new javax.swing.JLabel();
+        Postre5 = new javax.swing.JCheckBox();
         jPanel6 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jCheckBox6 = new javax.swing.JCheckBox();
+        VPostre6 = new javax.swing.JLabel();
+        NPostre6 = new javax.swing.JLabel();
+        PPostre6 = new javax.swing.JLabel();
+        Postre6 = new javax.swing.JCheckBox();
         jPanel7 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jCheckBox7 = new javax.swing.JCheckBox();
+        VPostre7 = new javax.swing.JLabel();
+        NPostre7 = new javax.swing.JLabel();
+        PPostre7 = new javax.swing.JLabel();
+        Postre7 = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
@@ -176,7 +176,7 @@ public class MPostres extends javax.swing.JFrame {
         LabelPlatos.setFont(new java.awt.Font("Freestyle Script", 0, 72)); // NOI18N
         LabelPlatos.setForeground(new java.awt.Color(16, 19, 24));
         LabelPlatos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelPlatos.setText("Platos");
+        LabelPlatos.setText("Postres");
 
         Scrollp.setBackground(new java.awt.Color(217, 120, 26));
         Scrollp.setBorder(null);
@@ -197,34 +197,34 @@ public class MPostres extends javax.swing.JFrame {
         jPanel13.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel13.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Baba au Rhum.png"))); // NOI18N
+        VPostre1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Baba au Rhum.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
         jPanel13Layout.setHorizontalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel13Layout.setVerticalGroup(
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Baba au Rhum");
+        NPostre1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPostre1.setForeground(new java.awt.Color(255, 255, 255));
+        NPostre1.setText("Baba au Rhum");
 
-        jLabel14.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("$ 92 300");
+        PPostre1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPostre1.setForeground(new java.awt.Color(255, 255, 255));
+        PPostre1.setText("$ 92 300");
 
-        jCheckBox1.setBorder(null);
-        jCheckBox1.setContentAreaFilled(false);
-        jCheckBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre1.setBorder(null);
+        Postre1.setContentAreaFilled(false);
+        Postre1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Postre1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Postre1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -234,9 +234,9 @@ public class MPostres extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel14)
-                    .addComponent(jCheckBox1))
+                    .addComponent(NPostre1)
+                    .addComponent(PPostre1)
+                    .addComponent(Postre1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -245,11 +245,11 @@ public class MPostres extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
+                .addComponent(NPostre1)
                 .addGap(6, 6, 6)
-                .addComponent(jLabel14)
+                .addComponent(PPostre1)
                 .addGap(6, 6, 6)
-                .addComponent(jCheckBox1)
+                .addComponent(Postre1)
                 .addGap(15, 15, 15))
         );
 
@@ -262,34 +262,34 @@ public class MPostres extends javax.swing.JFrame {
         jPanel15.setMaximumSize(new java.awt.Dimension(146, 146));
         jPanel15.setMinimumSize(new java.awt.Dimension(146, 146));
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Crème brûlée.png"))); // NOI18N
+        VPostre3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Crème brûlée.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
         jPanel15Layout.setHorizontalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel29, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel15Layout.setVerticalGroup(
             jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Crème Brûlée");
+        NPostre3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPostre3.setForeground(new java.awt.Color(255, 255, 255));
+        NPostre3.setText("Crème Brûlée");
 
-        jLabel16.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("$ 87 600");
+        PPostre3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPostre3.setForeground(new java.awt.Color(255, 255, 255));
+        PPostre3.setText("$ 87 600");
 
-        jCheckBox3.setBorder(null);
-        jCheckBox3.setContentAreaFilled(false);
-        jCheckBox3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox3.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre3.setBorder(null);
+        Postre3.setContentAreaFilled(false);
+        Postre3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Postre3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre3.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Postre3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -301,9 +301,9 @@ public class MPostres extends javax.swing.JFrame {
                     .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel16))
+                            .addComponent(Postre3)
+                            .addComponent(NPostre3)
+                            .addComponent(PPostre3))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -313,11 +313,11 @@ public class MPostres extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel4)
+                .addComponent(NPostre3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16)
+                .addComponent(PPostre3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox3)
+                .addComponent(Postre3)
                 .addGap(15, 15, 15))
         );
 
@@ -330,34 +330,34 @@ public class MPostres extends javax.swing.JFrame {
         jPanel14.setMaximumSize(new java.awt.Dimension(146, 146));
         jPanel14.setMinimumSize(new java.awt.Dimension(146, 146));
 
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Clafoutis.png"))); // NOI18N
+        VPostre2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Clafoutis.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
         jPanel14Layout.setHorizontalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel14Layout.setVerticalGroup(
             jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel28, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Clafoutis");
+        NPostre2.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPostre2.setForeground(new java.awt.Color(255, 255, 255));
+        NPostre2.setText("Clafoutis");
 
-        jLabel15.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("$ 72 900");
+        PPostre2.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPostre2.setForeground(new java.awt.Color(255, 255, 255));
+        PPostre2.setText("$ 72 900");
 
-        jCheckBox2.setBorder(null);
-        jCheckBox2.setContentAreaFilled(false);
-        jCheckBox2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre2.setBorder(null);
+        Postre2.setContentAreaFilled(false);
+        Postre2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Postre2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Postre2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -369,9 +369,9 @@ public class MPostres extends javax.swing.JFrame {
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel15))
+                            .addComponent(Postre2)
+                            .addComponent(NPostre2)
+                            .addComponent(PPostre2))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -381,11 +381,11 @@ public class MPostres extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
+                .addComponent(NPostre2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel15)
+                .addComponent(PPostre2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox2)
+                .addComponent(Postre2)
                 .addGap(15, 15, 15))
         );
 
@@ -399,35 +399,35 @@ public class MPostres extends javax.swing.JFrame {
         jPanel16.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel16.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Croquant de pamplemousse .png"))); // NOI18N
+        VPostre4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Croquant de pamplemousse .png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel30, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel30, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText("Croquant du Pamplemousse");
-        jLabel7.setToolTipText("");
+        NPostre4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPostre4.setForeground(new java.awt.Color(255, 255, 255));
+        NPostre4.setText("Croquant du Pamplemousse");
+        NPostre4.setToolTipText("");
 
-        jLabel17.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("$ 109 700");
+        PPostre4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPostre4.setForeground(new java.awt.Color(255, 255, 255));
+        PPostre4.setText("$ 109 700");
 
-        jCheckBox4.setBorder(null);
-        jCheckBox4.setContentAreaFilled(false);
-        jCheckBox4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox4.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre4.setBorder(null);
+        Postre4.setContentAreaFilled(false);
+        Postre4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Postre4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre4.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Postre4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -437,9 +437,9 @@ public class MPostres extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel17)
-                    .addComponent(jCheckBox4))
+                    .addComponent(NPostre4)
+                    .addComponent(PPostre4)
+                    .addComponent(Postre4))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -448,11 +448,11 @@ public class MPostres extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7)
+                .addComponent(NPostre4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel17)
+                .addComponent(PPostre4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox4)
+                .addComponent(Postre4)
                 .addGap(15, 15, 15))
         );
 
@@ -466,34 +466,34 @@ public class MPostres extends javax.swing.JFrame {
         jPanel17.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel17.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Eclair au chocolat.png"))); // NOI18N
+        VPostre5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Eclair au chocolat.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
         jPanel17Layout.setHorizontalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel31, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel17Layout.setVerticalGroup(
             jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Eclair au Chocolat");
+        NPostre5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPostre5.setForeground(new java.awt.Color(255, 255, 255));
+        NPostre5.setText("Eclair au Chocolat");
 
-        jLabel18.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("$ 112 800");
+        PPostre5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPostre5.setForeground(new java.awt.Color(255, 255, 255));
+        PPostre5.setText("$ 112 800");
 
-        jCheckBox5.setBorder(null);
-        jCheckBox5.setContentAreaFilled(false);
-        jCheckBox5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox5.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox5.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre5.setBorder(null);
+        Postre5.setContentAreaFilled(false);
+        Postre5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Postre5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre5.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Postre5.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -505,9 +505,9 @@ public class MPostres extends javax.swing.JFrame {
                     .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox5)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel18))
+                            .addComponent(Postre5)
+                            .addComponent(NPostre5)
+                            .addComponent(PPostre5))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -517,11 +517,11 @@ public class MPostres extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6)
+                .addComponent(NPostre5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18)
+                .addComponent(PPostre5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox5)
+                .addComponent(Postre5)
                 .addGap(15, 15, 15))
         );
 
@@ -535,34 +535,34 @@ public class MPostres extends javax.swing.JFrame {
         jPanel18.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel18.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Givré laitier.png"))); // NOI18N
+        VPostre6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Givré laitier.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
         jPanel18.setLayout(jPanel18Layout);
         jPanel18Layout.setHorizontalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel18Layout.setVerticalGroup(
             jPanel18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Givré Laitier");
+        NPostre6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPostre6.setForeground(new java.awt.Color(255, 255, 255));
+        NPostre6.setText("Givré Laitier");
 
-        jLabel19.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("$ 100 300");
+        PPostre6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPostre6.setForeground(new java.awt.Color(255, 255, 255));
+        PPostre6.setText("$ 100 300");
 
-        jCheckBox6.setBorder(null);
-        jCheckBox6.setContentAreaFilled(false);
-        jCheckBox6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox6.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox6.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre6.setBorder(null);
+        Postre6.setContentAreaFilled(false);
+        Postre6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Postre6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre6.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Postre6.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -574,9 +574,9 @@ public class MPostres extends javax.swing.JFrame {
                     .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox6)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel19))
+                            .addComponent(Postre6)
+                            .addComponent(NPostre6)
+                            .addComponent(PPostre6))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -586,11 +586,11 @@ public class MPostres extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
+                .addComponent(NPostre6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel19)
+                .addComponent(PPostre6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox6)
+                .addComponent(Postre6)
                 .addGap(15, 15, 15))
         );
 
@@ -604,34 +604,34 @@ public class MPostres extends javax.swing.JFrame {
         jPanel19.setMinimumSize(new java.awt.Dimension(146, 146));
         jPanel19.setPreferredSize(new java.awt.Dimension(146, 146));
 
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Île flottante.png"))); // NOI18N
+        VPostre7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Postres/Île flottante.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);
         jPanel19.setLayout(jPanel19Layout);
         jPanel19Layout.setHorizontalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel33, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel33, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(VPostre7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel10.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("Île Flottante");
+        NPostre7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        NPostre7.setForeground(new java.awt.Color(255, 255, 255));
+        NPostre7.setText("Île Flottante");
 
-        jLabel20.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel20.setText("$ 81 500");
+        PPostre7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        PPostre7.setForeground(new java.awt.Color(255, 255, 255));
+        PPostre7.setText("$ 81 500");
 
-        jCheckBox7.setBorder(null);
-        jCheckBox7.setContentAreaFilled(false);
-        jCheckBox7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
-        jCheckBox7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
-        jCheckBox7.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
-        jCheckBox7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre7.setBorder(null);
+        Postre7.setContentAreaFilled(false);
+        Postre7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check normal.png"))); // NOI18N
+        Postre7.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
+        Postre7.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
+        Postre7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -641,9 +641,9 @@ public class MPostres extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jCheckBox7)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel20))
+                    .addComponent(Postre7)
+                    .addComponent(NPostre7)
+                    .addComponent(PPostre7))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -652,11 +652,11 @@ public class MPostres extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel10)
+                .addComponent(NPostre7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel20)
+                .addComponent(PPostre7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox7)
+                .addComponent(Postre7)
                 .addGap(15, 15, 15))
         );
 
@@ -802,38 +802,38 @@ public class MPostres extends javax.swing.JFrame {
     private javax.swing.JLabel LabelOrden;
     private javax.swing.JLabel LabelPlatos;
     private javax.swing.JPanel Menu;
+    private javax.swing.JLabel NPostre1;
+    private javax.swing.JLabel NPostre2;
+    private javax.swing.JLabel NPostre3;
+    private javax.swing.JLabel NPostre4;
+    private javax.swing.JLabel NPostre5;
+    private javax.swing.JLabel NPostre6;
+    private javax.swing.JLabel NPostre7;
+    private javax.swing.JLabel PPostre1;
+    private javax.swing.JLabel PPostre2;
+    private javax.swing.JLabel PPostre3;
+    private javax.swing.JLabel PPostre4;
+    private javax.swing.JLabel PPostre5;
+    private javax.swing.JLabel PPostre6;
+    private javax.swing.JLabel PPostre7;
     private javax.swing.JPanel PanelRojo;
+    private javax.swing.JCheckBox Postre1;
+    private javax.swing.JCheckBox Postre2;
+    private javax.swing.JCheckBox Postre3;
+    private javax.swing.JCheckBox Postre4;
+    private javax.swing.JCheckBox Postre5;
+    private javax.swing.JCheckBox Postre6;
+    private javax.swing.JCheckBox Postre7;
     private javax.swing.JScrollPane Scrollp;
+    private javax.swing.JLabel VPostre1;
+    private javax.swing.JLabel VPostre2;
+    private javax.swing.JLabel VPostre3;
+    private javax.swing.JLabel VPostre4;
+    private javax.swing.JLabel VPostre5;
+    private javax.swing.JLabel VPostre6;
+    private javax.swing.JLabel VPostre7;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox3;
-    private javax.swing.JCheckBox jCheckBox4;
-    private javax.swing.JCheckBox jCheckBox5;
-    private javax.swing.JCheckBox jCheckBox6;
-    private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel13;
