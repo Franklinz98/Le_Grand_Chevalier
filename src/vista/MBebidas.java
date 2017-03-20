@@ -290,7 +290,7 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel15.setMaximumSize(new java.awt.Dimension(146, 146));
         jPanel15.setMinimumSize(new java.awt.Dimension(146, 146));
 
-        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/baiser français.png"))); // NOI18N
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Cocktail Kir.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
         jPanel15.setLayout(jPanel15Layout);
@@ -305,11 +305,11 @@ public class MBebidas extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Baiser Français");
+        jLabel4.setText("Cocktail Kir");
 
         jLabel16.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("$ 27 200");
+        jLabel16.setText("$ 32 500");
 
         jCheckBox3.setBorder(null);
         jCheckBox3.setContentAreaFilled(false);
@@ -358,7 +358,7 @@ public class MBebidas extends javax.swing.JFrame {
         jPanel14.setMaximumSize(new java.awt.Dimension(146, 146));
         jPanel14.setMinimumSize(new java.awt.Dimension(146, 146));
 
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/Cocktail Kir.png"))); // NOI18N
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Carta/Bebidas/baiser français.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
         jPanel14.setLayout(jPanel14Layout);
@@ -373,11 +373,11 @@ public class MBebidas extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Cocktail Kir");
+        jLabel3.setText("Baiser Français");
 
         jLabel15.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("$ 18 600");
+        jLabel15.setText("$ 27 200");
 
         jCheckBox2.setBorder(null);
         jCheckBox2.setContentAreaFilled(false);
