@@ -45,7 +45,7 @@ public class MBebidas extends javax.swing.JFrame {
         PanelRojo = new javax.swing.JPanel();
         LabelOrden = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        OrdenBebidas = new javax.swing.JList<>();
         CocinaAD = new javax.swing.JButton();
         CocinaAD1 = new javax.swing.JButton();
         LabelPlatos = new javax.swing.JLabel();
@@ -135,13 +135,13 @@ public class MBebidas extends javax.swing.JFrame {
         LabelOrden.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelOrden.setText("Orden");
 
-        jList1.setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+        OrdenBebidas.setFont(new java.awt.Font("Freestyle Script", 0, 24)); // NOI18N
+        OrdenBebidas.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
-        jScrollPane2.setViewportView(jList1);
+        jScrollPane2.setViewportView(OrdenBebidas);
 
         CocinaAD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/enviar normal.png"))); // NOI18N
         CocinaAD.setBorder(null);
@@ -1137,6 +1137,7 @@ public class MBebidas extends javax.swing.JFrame {
     private javax.swing.JLabel NBebida7;
     private javax.swing.JLabel NBebida8;
     private javax.swing.JLabel NBebida9;
+    private javax.swing.JList<String> OrdenBebidas;
     private javax.swing.JLabel PBebida1;
     private javax.swing.JLabel PBebida10;
     private javax.swing.JLabel PBebida11;
@@ -1163,7 +1164,6 @@ public class MBebidas extends javax.swing.JFrame {
     private javax.swing.JLabel VBebida9;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
