@@ -15,11 +15,11 @@ public class Restaurante {
 
     public Restaurante() throws IOException {
         PlatoP Platos = new PlatoP();
-        System.out.println();
-        System.out.println();
+        //System.out.println();
+        //System.out.println();
         Bebida Bebidas = new Bebida();
-        System.out.println();
-        System.out.println();
+        //System.out.println();
+        //System.out.println();
         Postre Postres = new Postre();
     }
 
