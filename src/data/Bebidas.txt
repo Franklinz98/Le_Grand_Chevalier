@@ -1,10 +1,10 @@
 9420;Agua;Agua;0.25;3000;
-9700;Baiser Français;Licor Fusión,Licor de frambuesa;0.1,0.1;27200;
+9700;Baiser Francais;Licor Fusión,Licor de frambuesa;0.1,0.1;27200;
 1290;Champagne Canard Authentic Non Vintage;Champagne Canard;1;63000;
 9910;Champagne Laurent Perrier;Champagne Laurent Perrier;1;48900;
 4150;Champagne Nicolas Feuillatte Reserve;Champagne Nicolas Feuillatte Reserve;1;84500;
-5600;Château La Coste;Château La Coste;1;59400;
-7490;Château Simone Palette Rouge;Château Simone Palette Rouge;1;93500;
+5600;Chateau La Coste;Chateau La Coste;1;59400;
+7490;Chateau Simone Palette Rouge;Chateau Simone Palette Rouge;1;93500;
 9100;Vin Blanc de Bourgogne;Vin Blanc de Bourgogne;1;103200;
 1490;Vin Domaine Corton Charlemagne;Vin Domaine Corton Charlemagne;1;68900;
 6020;Vin Domaine Leroy Musigny;Vin Domaine Leroy Musigny;1;119100;

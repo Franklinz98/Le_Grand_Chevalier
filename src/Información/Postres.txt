@@ -1,7 +1,0 @@
-6800;Baba au Rhum;Pasas,Mantequilla,Leche,Azucar,Huevo,Sal;0.1,0.25,0.25,0.2,2,0.1;92300;
-3400;Clafoutis;Leche,Huevo,Azucar,Mantequilla;0.25,3,0.1,0.2;72900;
-5900;Crème brûlée;Crema de Leche,Azucar,Huevo;0.25,0.5,6;87600;
-6100;Croquant de pamplemousse;Pomelo,Copo de maiz,Azucar,Mantequilla;3,0.1,0.1,0.02;109700;
-7200;Eclair au chocolat;Huevo,Mantequilla,Harina,Leche,Azucar,Crema de Leche;6,0.1,0.2,0.25,0.06,0.07;112800;
-1700;Givré laitier;Leche,Helado,Arándano;0.5,0.25,0.25;100300;
-9000;Île flottante;Huevo,Leche,Azucar;6,0.5,0.17;81500;

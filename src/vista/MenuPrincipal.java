@@ -9,12 +9,12 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
 
+
 /**
  *
  * @author mybas
  */
 public class MenuPrincipal extends javax.swing.JFrame {
-
     /**
      * Creates new form IntPrincipal
      */
