@@ -5,14 +5,16 @@
  */
 package modelo;
 
+import java.io.IOException;
+
 /**
  *
  * @author mybas
  */
-public class Bebida extends Plato {
+public class Bebida extends Plato{
     
-    public Bebida(float precio, String nombreplato, String nom, float cant, int cod) {
-        super(precio, nombreplato, nom, cant, cod);
+    public Bebida() throws IOException {
+        super("/data/Bebidas.txt");
     }
     
 }

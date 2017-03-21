@@ -5,14 +5,16 @@
  */
 package modelo;
 
+import java.io.IOException;
+
 /**
  *
  * @author mybas
  */
 public class PlatoP extends Plato{
     
-    public PlatoP(float precio, String nombreplato, String nom, float cant, int cod) {
-        super(precio, nombreplato, nom, cant, cod);
+    public PlatoP() throws IOException {
+        super("/data/Platos.txt");
     }
     
 }
