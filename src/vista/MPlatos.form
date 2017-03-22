@@ -596,6 +596,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato3ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -726,6 +729,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato2ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -859,6 +865,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato4ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -992,6 +1001,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato5ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1125,6 +1137,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato6ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1258,6 +1273,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato7ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1391,6 +1409,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato8ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1524,6 +1545,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato9ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1657,6 +1681,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato11ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1790,6 +1817,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato12ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1911,6 +1941,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato10ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>

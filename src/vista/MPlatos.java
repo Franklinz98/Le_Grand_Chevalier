@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.swing.DefaultListModel;
+import modelo.PlatoP;
 
 /**
  *
@@ -24,8 +25,9 @@ public class MPlatos extends javax.swing.JFrame {
         int precio;
         Orden link;
     }
-    
+
     Orden ptr;
+
     /**
      * Creates new form IntPrincipal
      */
@@ -41,7 +43,55 @@ public class MPlatos extends javax.swing.JFrame {
 
         this.getContentPane().setBackground(Naranjarest);
         PanelRojo.setBackground(Vinorest);
-        ptr=null;
+        DefaultListModel model = new DefaultListModel();
+        OrdenPlatos.setModel(model);
+        ptr = null;
+    }
+
+    Orden agregarPlato(Orden ptr, int codigo, String nombre, int precio, int cantidad) {
+        Orden p = new Orden();
+        p.codigo = codigo;
+        p.nombre = nombre;
+        p.precio = precio;
+        p.cantidad = cantidad;
+        if (ptr == null) {
+            ptr = p;
+        } else {
+            Orden q = ptr;
+            while (q.link != null) {
+                q = q.link;
+            }
+            q.link = p;
+        }
+        return ptr;
+    }
+
+    Orden QuitarPlato(Orden ptr, int codigo) {
+        if (ptr.codigo == codigo) {
+            ptr = ptr.link;
+        } else {
+            Orden antq = ptr;
+            Orden q = ptr.link;
+            while (q.codigo != codigo && q.link != null) {
+                antq = antq.link;
+                q = q.link;
+            }
+            antq.link = q.link;
+            q.link = null;
+        }
+        return ptr;
+    }
+
+    void mostrarOrden(Orden ptr) {
+        DefaultListModel model = (DefaultListModel) OrdenPlatos.getModel();
+        model.clear();
+
+        Orden p = ptr;
+        while (p != null) {
+            model.addElement(p.nombre);
+            p = p.link;
+        }
+
     }
 
     /**
@@ -340,6 +390,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato3.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato3.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato3ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -405,6 +460,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato2.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato2ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -471,6 +531,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato4.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato4.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato4ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -537,6 +602,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato5.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato5.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato5.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato5ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -603,6 +673,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato6.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato6.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato6.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato6ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -669,6 +744,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato7.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato7.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato7ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -735,6 +815,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato8.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato8.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato8.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato8.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato8ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -801,6 +886,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato9.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato9.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato9.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato9.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato9ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -867,6 +957,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato11.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato11.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato11.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato11.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato11ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -933,6 +1028,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato12.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato12.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato12.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato12.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato12ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
@@ -993,6 +1093,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato10.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato10.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato10.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato10.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato10ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -1132,40 +1237,136 @@ public class MPlatos extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void Plato1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato1ItemStateChanged
+        int codigo = 2343;
         if (Plato1.isSelected()) {
-            
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
         }
     }//GEN-LAST:event_Plato1ItemStateChanged
 
-    Orden agregarCola(Orden ptr, int codigo, String nombre,int precio,int cantidad){
-        Orden p = new Orden();
-        p.codigo=codigo;
-        p.nombre=nombre;
-        p.precio=precio;
-        p.cantidad=cantidad;
-        if(ptr == null){
-            ptr = p;
-        }else{
-            Orden q = ptr;
-            while(q.link != null){
-                q = q.link;
-            }
-            q.link = p;
+    private void Plato2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato2ItemStateChanged
+        int codigo = 2792;
+        if (Plato2.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
         }
-        return ptr;
-    }
-    
-    void mostrarLista(Orden ptr){
-        DefaultListModel model = (DefaultListModel) OrdenPlatos.getModel();
-        model.clear();
-        
-        Orden p = ptr;
-        while(p != null){
-            model.addElement(p.nombre);
-            p = p.link;
+    }//GEN-LAST:event_Plato2ItemStateChanged
+
+    private void Plato3ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato3ItemStateChanged
+        int codigo = 9980;
+        if (Plato3.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
         }
-        
-    }
+    }//GEN-LAST:event_Plato3ItemStateChanged
+
+    private void Plato4ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato4ItemStateChanged
+        int codigo = 6236;
+        if (Plato4.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_Plato4ItemStateChanged
+
+    private void Plato5ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato5ItemStateChanged
+        int codigo = 7985;
+        if (Plato5.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_Plato5ItemStateChanged
+
+    private void Plato6ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato6ItemStateChanged
+        int codigo = 2850;
+        if (Plato6.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_Plato6ItemStateChanged
+
+    private void Plato7ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato7ItemStateChanged
+        int codigo = 5863;
+        if (Plato7.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_Plato7ItemStateChanged
+
+    private void Plato8ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato8ItemStateChanged
+        int codigo = 4496;
+        if (Plato8.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_Plato8ItemStateChanged
+
+    private void Plato9ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato9ItemStateChanged
+        int codigo = 4820;
+        if (Plato9.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_Plato9ItemStateChanged
+
+    private void Plato10ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato10ItemStateChanged
+        int codigo = 5177;
+        if (Plato10.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_Plato10ItemStateChanged
+
+    private void Plato11ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato11ItemStateChanged
+        int codigo = 3944;
+        if (Plato11.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_Plato11ItemStateChanged
+
+    private void Plato12ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato12ItemStateChanged
+        int codigo = 2117;
+        if (Plato12.isSelected()) {
+            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            mostrarOrden(ptr);
+        } else {
+            ptr = QuitarPlato(ptr, codigo);
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_Plato12ItemStateChanged
     /**
      * @param args the command line arguments
      */

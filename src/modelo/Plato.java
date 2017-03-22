@@ -33,7 +33,7 @@ public abstract class Plato {
         Inventario link;
     }
 
-    Inventario ptr;
+    static Inventario ptr;
 
     Ingrediente agregaringrediente(Ingrediente ptr, String nombre, double cantidad) {
         Ingrediente p = new Ingrediente();

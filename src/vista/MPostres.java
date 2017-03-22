@@ -8,6 +8,7 @@ package vista;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.DefaultListModel;
 
 /**
  *
@@ -30,6 +31,8 @@ public class MPostres extends javax.swing.JFrame {
 
         this.getContentPane().setBackground(Naranjarest);
         PanelRojo.setBackground(Vinorest);
+        DefaultListModel model = new DefaultListModel();
+        OrdenPostres.setModel(model);
     }
 
     /**
@@ -225,6 +228,11 @@ public class MPostres extends javax.swing.JFrame {
         Postre1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Postre1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Postre1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre1.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Postre1ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -753,6 +761,10 @@ public class MPostres extends javax.swing.JFrame {
         elec.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void Postre1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Postre1ItemStateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Postre1ItemStateChanged
 
     /**
      * @param args the command line arguments

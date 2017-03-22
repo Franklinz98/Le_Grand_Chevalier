@@ -16,5 +16,18 @@ public class PlatoP extends Plato{
     public PlatoP() throws IOException {
         super("Platos.txt");
     }
-    
+    public static String Buscarnombre(int codigo){
+        Inventario p=ptr;
+        while (p.codigo!=codigo&&p.link!=null){
+            p=p.link;
+        }
+        return p.nombre;
+    }
+    static public int Buscarprecio (int codigo){
+        Inventario p=ptr;
+        while (p.codigo!=codigo&&p.link!=null){
+            p=p.link;
+        }
+        return p.precio;
+    }
 }
