@@ -463,6 +463,9 @@
                       <Image iconType="3" name="/Recursos/BotonesMenu/check seleccionado.png"/>
                     </Property>
                   </Properties>
+                  <Events>
+                    <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="Plato1ItemStateChanged"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>

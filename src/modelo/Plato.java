@@ -10,7 +10,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import org.jcp.xml.dsig.internal.dom.Utils;
 
 /**
  *
@@ -18,14 +17,14 @@ import org.jcp.xml.dsig.internal.dom.Utils;
  */
 public abstract class Plato {
 
-    private class Ingrediente {
+    class Ingrediente {
 
         String nombre;
         double cantidad;
         Ingrediente link;
     }
 
-    private class Inventario {
+    class Inventario {
 
         int codigo;
         String nombre;
@@ -34,8 +33,8 @@ public abstract class Plato {
         Inventario link;
     }
 
-    private Inventario ptr;
-    
+    Inventario ptr;
+
     Ingrediente agregaringrediente(Ingrediente ptr, String nombre, double cantidad) {
         Ingrediente p = new Ingrediente();
         p.nombre = nombre;
@@ -63,7 +62,7 @@ public abstract class Plato {
         int s = nomi.length;
         for (int i = 0; i < s; i++) {
             double temp = Double.parseDouble(canti[i]);
-        //    System.out.print(nomi[i] + " " + temp + " | ");
+            //    System.out.print(nomi[i] + " " + temp + " | ");
             p.ptri = agregaringrediente(p.ptri, nomi[i], temp);
         }
         if (ptr == null) {
@@ -80,7 +79,7 @@ public abstract class Plato {
     }
 
     void cargarinventario(String URL) throws FileNotFoundException, IOException {
-        File plato = new File(Utils.class.getResource(URL).getPath());
+        File plato = new File("src\\data\\"+URL);
         BufferedReader bf;
         bf = new BufferedReader(new FileReader(plato));
         String Linea;
@@ -90,7 +89,10 @@ public abstract class Plato {
         }
     }
 
+    
+    
     public Plato(String URL) throws IOException {
         cargarinventario(URL);
     }
+
 }

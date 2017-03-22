@@ -14,7 +14,7 @@ import java.io.IOException;
 public class Postre extends Plato{
     
     public Postre() throws IOException {
-        super("/data/Postres.txt");
+        super("Postres.txt");
     }
     
 }

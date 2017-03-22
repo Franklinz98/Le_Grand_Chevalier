@@ -8,6 +8,7 @@ package vista;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.DefaultListModel;
 
 /**
  *
@@ -15,6 +16,16 @@ import java.awt.Toolkit;
  */
 public class MPlatos extends javax.swing.JFrame {
 
+    class Orden {
+
+        int codigo;
+        String nombre;
+        int cantidad;
+        int precio;
+        Orden link;
+    }
+    
+    Orden ptr;
     /**
      * Creates new form IntPrincipal
      */
@@ -30,6 +41,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         this.getContentPane().setBackground(Naranjarest);
         PanelRojo.setBackground(Vinorest);
+        ptr=null;
     }
 
     /**
@@ -255,6 +267,11 @@ public class MPlatos extends javax.swing.JFrame {
         Plato1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Plato1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Plato1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Plato1.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Plato1ItemStateChanged(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -1114,6 +1131,41 @@ public class MPlatos extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void Plato1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato1ItemStateChanged
+        if (Plato1.isSelected()) {
+            
+        }
+    }//GEN-LAST:event_Plato1ItemStateChanged
+
+    Orden agregarCola(Orden ptr, int codigo, String nombre,int precio,int cantidad){
+        Orden p = new Orden();
+        p.codigo=codigo;
+        p.nombre=nombre;
+        p.precio=precio;
+        p.cantidad=cantidad;
+        if(ptr == null){
+            ptr = p;
+        }else{
+            Orden q = ptr;
+            while(q.link != null){
+                q = q.link;
+            }
+            q.link = p;
+        }
+        return ptr;
+    }
+    
+    void mostrarLista(Orden ptr){
+        DefaultListModel model = (DefaultListModel) OrdenPlatos.getModel();
+        model.clear();
+        
+        Orden p = ptr;
+        while(p != null){
+            model.addElement(p.nombre);
+            p = p.link;
+        }
+        
+    }
     /**
      * @param args the command line arguments
      */

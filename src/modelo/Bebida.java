@@ -14,7 +14,7 @@ import java.io.IOException;
 public class Bebida extends Plato{
     
     public Bebida() throws IOException {
-        super("/data/Bebidas.txt");
+        super("Bebidas.txt");
     }
     
 }
