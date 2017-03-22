@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
 import javax.swing.DefaultListModel;
+import modelo.PlatoP;
 
 /**
  *
@@ -33,8 +34,23 @@ public class MPostres extends javax.swing.JFrame {
         PanelRojo.setBackground(Vinorest);
         DefaultListModel model = new DefaultListModel();
         OrdenPostres.setModel(model);
+        if (MPlatos.ptr!=null) {
+            mostrarOrden(MPlatos.ptr);
+        }
     }
 
+    void mostrarOrden(MPlatos.Orden ptr) {
+        DefaultListModel model = (DefaultListModel) OrdenPostres.getModel();
+        model.clear();
+
+        MPlatos.Orden p = ptr;
+        while (p != null) {
+            model.addElement(p.nombre+","+p.cantidad+".");
+            p = p.link;
+        }
+
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -60,42 +76,49 @@ public class MPostres extends javax.swing.JFrame {
         NPostre1 = new javax.swing.JLabel();
         PPostre1 = new javax.swing.JLabel();
         Postre1 = new javax.swing.JCheckBox();
+        CPostre1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
         VPostre3 = new javax.swing.JLabel();
         NPostre3 = new javax.swing.JLabel();
         PPostre3 = new javax.swing.JLabel();
         Postre3 = new javax.swing.JCheckBox();
+        CPostre3 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         VPostre2 = new javax.swing.JLabel();
         NPostre2 = new javax.swing.JLabel();
         PPostre2 = new javax.swing.JLabel();
         Postre2 = new javax.swing.JCheckBox();
+        CPostre2 = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
         VPostre4 = new javax.swing.JLabel();
         NPostre4 = new javax.swing.JLabel();
         PPostre4 = new javax.swing.JLabel();
         Postre4 = new javax.swing.JCheckBox();
+        CPostre4 = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         VPostre5 = new javax.swing.JLabel();
         NPostre5 = new javax.swing.JLabel();
         PPostre5 = new javax.swing.JLabel();
         Postre5 = new javax.swing.JCheckBox();
+        CPostre5 = new javax.swing.JTextField();
         jPanel6 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         VPostre6 = new javax.swing.JLabel();
         NPostre6 = new javax.swing.JLabel();
         PPostre6 = new javax.swing.JLabel();
         Postre6 = new javax.swing.JCheckBox();
+        CPostre6 = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
         VPostre7 = new javax.swing.JLabel();
         NPostre7 = new javax.swing.JLabel();
         PPostre7 = new javax.swing.JLabel();
         Postre7 = new javax.swing.JCheckBox();
+        CPostre7 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
@@ -234,17 +257,40 @@ public class MPostres extends javax.swing.JFrame {
             }
         });
 
+        CPostre1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPostre1.setForeground(new java.awt.Color(16, 19, 24));
+        CPostre1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPostre1.setText("1");
+        CPostre1.setBorder(null);
+        CPostre1.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPostre1.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPostre1.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPostre1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPostre1MouseClicked(evt);
+            }
+        });
+        CPostre1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPostre1KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(NPostre1)
-                    .addComponent(PPostre1)
-                    .addComponent(Postre1))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(PPostre1)
+                            .addComponent(Postre1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPostre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -257,7 +303,9 @@ public class MPostres extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addComponent(PPostre1)
                 .addGap(6, 6, 6)
-                .addComponent(Postre1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Postre1)
+                    .addComponent(CPostre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -298,6 +346,30 @@ public class MPostres extends javax.swing.JFrame {
         Postre3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Postre3.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Postre3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre3.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Postre3ItemStateChanged(evt);
+            }
+        });
+
+        CPostre3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPostre3.setForeground(new java.awt.Color(16, 19, 24));
+        CPostre3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPostre3.setText("1");
+        CPostre3.setBorder(null);
+        CPostre3.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPostre3.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPostre3.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPostre3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPostre3MouseClicked(evt);
+            }
+        });
+        CPostre3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPostre3KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -309,10 +381,13 @@ public class MPostres extends javax.swing.JFrame {
                     .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Postre3)
                             .addComponent(NPostre3)
                             .addComponent(PPostre3))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(Postre3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPostre3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -325,7 +400,9 @@ public class MPostres extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPostre3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Postre3)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Postre3)
+                    .addComponent(CPostre3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -366,6 +443,30 @@ public class MPostres extends javax.swing.JFrame {
         Postre2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Postre2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Postre2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre2.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Postre2ItemStateChanged(evt);
+            }
+        });
+
+        CPostre2.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPostre2.setForeground(new java.awt.Color(16, 19, 24));
+        CPostre2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPostre2.setText("1");
+        CPostre2.setBorder(null);
+        CPostre2.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPostre2.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPostre2.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPostre2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPostre2MouseClicked(evt);
+            }
+        });
+        CPostre2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPostre2KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -377,10 +478,13 @@ public class MPostres extends javax.swing.JFrame {
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Postre2)
                             .addComponent(NPostre2)
                             .addComponent(PPostre2))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(Postre2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPostre2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -393,7 +497,9 @@ public class MPostres extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPostre2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Postre2)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Postre2)
+                    .addComponent(CPostre2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -436,6 +542,30 @@ public class MPostres extends javax.swing.JFrame {
         Postre4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Postre4.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Postre4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre4.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Postre4ItemStateChanged(evt);
+            }
+        });
+
+        CPostre4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPostre4.setForeground(new java.awt.Color(16, 19, 24));
+        CPostre4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPostre4.setText("1");
+        CPostre4.setBorder(null);
+        CPostre4.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPostre4.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPostre4.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPostre4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPostre4MouseClicked(evt);
+            }
+        });
+        CPostre4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPostre4KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -443,11 +573,15 @@ public class MPostres extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(NPostre4)
-                    .addComponent(PPostre4)
-                    .addComponent(Postre4))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(PPostre4)
+                            .addComponent(Postre4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPostre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -460,7 +594,9 @@ public class MPostres extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPostre4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Postre4)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Postre4)
+                    .addComponent(CPostre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -502,6 +638,30 @@ public class MPostres extends javax.swing.JFrame {
         Postre5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Postre5.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Postre5.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre5.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Postre5ItemStateChanged(evt);
+            }
+        });
+
+        CPostre5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPostre5.setForeground(new java.awt.Color(16, 19, 24));
+        CPostre5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPostre5.setText("1");
+        CPostre5.setBorder(null);
+        CPostre5.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPostre5.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPostre5.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPostre5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPostre5MouseClicked(evt);
+            }
+        });
+        CPostre5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPostre5KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -513,10 +673,13 @@ public class MPostres extends javax.swing.JFrame {
                     .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Postre5)
                             .addComponent(NPostre5)
                             .addComponent(PPostre5))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(Postre5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPostre5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -529,7 +692,9 @@ public class MPostres extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPostre5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Postre5)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Postre5)
+                    .addComponent(CPostre5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -571,6 +736,30 @@ public class MPostres extends javax.swing.JFrame {
         Postre6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Postre6.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Postre6.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre6.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Postre6ItemStateChanged(evt);
+            }
+        });
+
+        CPostre6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPostre6.setForeground(new java.awt.Color(16, 19, 24));
+        CPostre6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPostre6.setText("1");
+        CPostre6.setBorder(null);
+        CPostre6.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPostre6.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPostre6.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPostre6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPostre6MouseClicked(evt);
+            }
+        });
+        CPostre6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPostre6KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -582,10 +771,13 @@ public class MPostres extends javax.swing.JFrame {
                     .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Postre6)
                             .addComponent(NPostre6)
                             .addComponent(PPostre6))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(Postre6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPostre6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
@@ -598,7 +790,9 @@ public class MPostres extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPostre6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Postre6)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Postre6)
+                    .addComponent(CPostre6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -640,6 +834,30 @@ public class MPostres extends javax.swing.JFrame {
         Postre7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Postre7.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Postre7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Postre7.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Postre7ItemStateChanged(evt);
+            }
+        });
+
+        CPostre7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPostre7.setForeground(new java.awt.Color(16, 19, 24));
+        CPostre7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPostre7.setText("1");
+        CPostre7.setBorder(null);
+        CPostre7.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPostre7.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPostre7.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPostre7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPostre7MouseClicked(evt);
+            }
+        });
+        CPostre7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPostre7KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -647,9 +865,12 @@ public class MPostres extends javax.swing.JFrame {
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Postre7)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(Postre7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPostre7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(NPostre7)
                     .addComponent(PPostre7))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -664,7 +885,9 @@ public class MPostres extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPostre7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Postre7)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Postre7)
+                    .addComponent(CPostre7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -763,8 +986,249 @@ public class MPostres extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void Postre1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Postre1ItemStateChanged
-        // TODO add your handling code here:
+        int codigo = 6800;
+        if (Postre1.isSelected()) {
+            if (CPostre1.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPostre1.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPostre1.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
     }//GEN-LAST:event_Postre1ItemStateChanged
+
+    private void Postre2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Postre2ItemStateChanged
+        int codigo = 3400;
+        if (Postre2.isSelected()) {
+            if (CPostre2.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPostre2.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPostre2.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Postre2ItemStateChanged
+
+    private void Postre3ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Postre3ItemStateChanged
+        int codigo = 5900;
+        if (Postre3.isSelected()) {
+            if (CPostre3.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPostre3.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPostre3.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Postre3ItemStateChanged
+
+    private void Postre4ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Postre4ItemStateChanged
+        int codigo = 6100;
+        if (Postre4.isSelected()) {
+            if (CPostre4.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPostre4.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPostre4.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Postre4ItemStateChanged
+
+    private void Postre5ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Postre5ItemStateChanged
+        int codigo = 7200;
+        if (Postre5.isSelected()) {
+            if (CPostre5.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPostre5.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPostre5.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Postre5ItemStateChanged
+
+    private void Postre6ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Postre6ItemStateChanged
+        int codigo = 1700;
+        if (Postre6.isSelected()) {
+            if (CPostre6.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPostre6.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPostre6.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Postre6ItemStateChanged
+
+    private void Postre7ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Postre7ItemStateChanged
+        int codigo = 9000;
+        if (Postre7.isSelected()) {
+            if (CPostre7.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPostre7.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPostre7.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Postre7ItemStateChanged
+
+    private void CPostre1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPostre1MouseClicked
+        CPostre1.setText("");
+    }//GEN-LAST:event_CPostre1MouseClicked
+
+    private void CPostre1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPostre1KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPostre1.setText("1");
+        } else {
+            CPostre1.setText("");
+            CPostre1.setText("" + c);
+        }
+        if (Postre1.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 6800, Integer.parseInt(CPostre1.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CPostre1KeyTyped
+
+    private void CPostre2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPostre2MouseClicked
+        CPostre2.setText("");
+    }//GEN-LAST:event_CPostre2MouseClicked
+
+    private void CPostre2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPostre2KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPostre2.setText("1");
+        } else {
+            CPostre2.setText("");
+            CPostre2.setText("" + c);
+        }
+        if (Postre2.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 3400, Integer.parseInt(CPostre2.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CPostre2KeyTyped
+
+    private void CPostre3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPostre3MouseClicked
+        CPostre3.setText("");
+    }//GEN-LAST:event_CPostre3MouseClicked
+
+    private void CPostre3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPostre3KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPostre3.setText("1");
+        } else {
+            CPostre3.setText("");
+            CPostre3.setText("" + c);
+        }
+        if (Postre3.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 5900, Integer.parseInt(CPostre3.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CPostre3KeyTyped
+
+    private void CPostre4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPostre4MouseClicked
+        CPostre4.setText("");
+    }//GEN-LAST:event_CPostre4MouseClicked
+
+    private void CPostre4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPostre4KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPostre4.setText("1");
+        } else {
+            CPostre4.setText("");
+            CPostre4.setText("" + c);
+        }
+        if (Postre4.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 6100, Integer.parseInt(CPostre4.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CPostre4KeyTyped
+
+    private void CPostre5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPostre5MouseClicked
+        CPostre5.setText("");
+    }//GEN-LAST:event_CPostre5MouseClicked
+
+    private void CPostre5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPostre5KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPostre5.setText("1");
+        } else {
+            CPostre5.setText("");
+            CPostre5.setText("" + c);
+        }
+        if (Postre5.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 7200, Integer.parseInt(CPostre5.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CPostre5KeyTyped
+
+    private void CPostre6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPostre6MouseClicked
+        CPostre6.setText("");
+    }//GEN-LAST:event_CPostre6MouseClicked
+
+    private void CPostre6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPostre6KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPostre6.setText("1");
+        } else {
+            CPostre6.setText("");
+            CPostre6.setText("" + c);
+        }
+        if (Postre6.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 1700, Integer.parseInt(CPostre6.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CPostre6KeyTyped
+
+    private void CPostre7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPostre7MouseClicked
+        CPostre7.setText("");
+    }//GEN-LAST:event_CPostre7MouseClicked
+
+    private void CPostre7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPostre7KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPostre7.setText("1");
+        } else {
+            CPostre7.setText("");
+            CPostre7.setText("" + c);
+        }
+        if (Postre7.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 9000, Integer.parseInt(CPostre7.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CPostre7KeyTyped
 
     /**
      * @param args the command line arguments
@@ -809,6 +1273,13 @@ public class MPostres extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField CPostre1;
+    private javax.swing.JTextField CPostre2;
+    private javax.swing.JTextField CPostre3;
+    private javax.swing.JTextField CPostre4;
+    private javax.swing.JTextField CPostre5;
+    private javax.swing.JTextField CPostre6;
+    private javax.swing.JTextField CPostre7;
     private javax.swing.JButton CocinaAD;
     private javax.swing.JButton CocinaAD1;
     private javax.swing.JLabel LabelOrden;

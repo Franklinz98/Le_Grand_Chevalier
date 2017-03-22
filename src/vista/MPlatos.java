@@ -5,6 +5,7 @@
  */
 package vista;
 
+import com.sun.glass.events.KeyEvent;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -17,7 +18,7 @@ import modelo.PlatoP;
  */
 public class MPlatos extends javax.swing.JFrame {
 
-    class Orden {
+    public static class Orden {
 
         int codigo;
         String nombre;
@@ -26,7 +27,7 @@ public class MPlatos extends javax.swing.JFrame {
         Orden link;
     }
 
-    Orden ptr;
+    public static Orden ptr=null;
 
     /**
      * Creates new form IntPrincipal
@@ -45,10 +46,12 @@ public class MPlatos extends javax.swing.JFrame {
         PanelRojo.setBackground(Vinorest);
         DefaultListModel model = new DefaultListModel();
         OrdenPlatos.setModel(model);
-        ptr = null;
+        if (ptr!=null) {
+            mostrarOrden(ptr);
+        }
     }
 
-    Orden agregarPlato(Orden ptr, int codigo, String nombre, int precio, int cantidad) {
+    public static Orden agregarPlato(Orden ptr, int codigo, String nombre, int precio, int cantidad) {
         Orden p = new Orden();
         p.codigo = codigo;
         p.nombre = nombre;
@@ -66,7 +69,16 @@ public class MPlatos extends javax.swing.JFrame {
         return ptr;
     }
 
-    Orden QuitarPlato(Orden ptr, int codigo) {
+    public static Orden actualizarPlato(Orden ptr, int codigo, int cantidad) {
+        Orden p = ptr;
+        while (p.codigo != codigo && p.link != null) {
+            p = p.link;
+        }
+        p.cantidad = cantidad;
+        return ptr;
+    }
+
+    public static Orden QuitarPlato(Orden ptr, int codigo) {
         if (ptr.codigo == codigo) {
             ptr = ptr.link;
         } else {
@@ -88,7 +100,7 @@ public class MPlatos extends javax.swing.JFrame {
 
         Orden p = ptr;
         while (p != null) {
-            model.addElement(p.nombre);
+            model.addElement(p.cantidad+","+p.nombre+".");
             p = p.link;
         }
 
@@ -119,72 +131,84 @@ public class MPlatos extends javax.swing.JFrame {
         NPlato1 = new javax.swing.JLabel();
         PPlato1 = new javax.swing.JLabel();
         Plato1 = new javax.swing.JCheckBox();
+        CPlato1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
         VPlato3 = new javax.swing.JLabel();
         NPlato3 = new javax.swing.JLabel();
         PPlato3 = new javax.swing.JLabel();
         Plato3 = new javax.swing.JCheckBox();
+        CPlato3 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         VPlato2 = new javax.swing.JLabel();
         NPlato2 = new javax.swing.JLabel();
         PPlato2 = new javax.swing.JLabel();
         Plato2 = new javax.swing.JCheckBox();
+        CPlato2 = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
         VPlato4 = new javax.swing.JLabel();
         NPlato4 = new javax.swing.JLabel();
         PPlato4 = new javax.swing.JLabel();
         Plato4 = new javax.swing.JCheckBox();
+        CPlato4 = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         VPlato5 = new javax.swing.JLabel();
         NPlato5 = new javax.swing.JLabel();
         PPlato5 = new javax.swing.JLabel();
         Plato5 = new javax.swing.JCheckBox();
+        CPlato5 = new javax.swing.JTextField();
         jPanel6 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         VPlato6 = new javax.swing.JLabel();
         NPlato6 = new javax.swing.JLabel();
         PPlato6 = new javax.swing.JLabel();
         Plato6 = new javax.swing.JCheckBox();
+        CPlato6 = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
         VPlato7 = new javax.swing.JLabel();
         NPlato7 = new javax.swing.JLabel();
         PPlato7 = new javax.swing.JLabel();
         Plato7 = new javax.swing.JCheckBox();
+        CPlato7 = new javax.swing.JTextField();
         jPanel8 = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
         VPlato8 = new javax.swing.JLabel();
         NPlato8 = new javax.swing.JLabel();
         PPlato8 = new javax.swing.JLabel();
         Plato8 = new javax.swing.JCheckBox();
+        CPlato8 = new javax.swing.JTextField();
         jPanel9 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
         VPlato9 = new javax.swing.JLabel();
         NPlato9 = new javax.swing.JLabel();
         PPlato9 = new javax.swing.JLabel();
         Plato9 = new javax.swing.JCheckBox();
+        CPlato9 = new javax.swing.JTextField();
         jPanel11 = new javax.swing.JPanel();
         jPanel23 = new javax.swing.JPanel();
         VPlato11 = new javax.swing.JLabel();
         NPlato11 = new javax.swing.JLabel();
         PPlato11 = new javax.swing.JLabel();
         Plato11 = new javax.swing.JCheckBox();
+        CPlato11 = new javax.swing.JTextField();
         jPanel12 = new javax.swing.JPanel();
         jPanel24 = new javax.swing.JPanel();
         VPlato12 = new javax.swing.JLabel();
         NPlato12 = new javax.swing.JLabel();
         PPlato12 = new javax.swing.JLabel();
         Plato12 = new javax.swing.JCheckBox();
+        CPlato12 = new javax.swing.JTextField();
         jPanel10 = new javax.swing.JPanel();
         jPanel22 = new javax.swing.JPanel();
         VPlato10 = new javax.swing.JLabel();
         NPlato10 = new javax.swing.JLabel();
         PPlato10 = new javax.swing.JLabel();
         Plato10 = new javax.swing.JCheckBox();
+        CPlato10 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
@@ -323,6 +347,25 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato1.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato1.setText("1");
+        CPlato1.setBorder(null);
+        CPlato1.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato1.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato1.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato1MouseClicked(evt);
+            }
+        });
+        CPlato1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato1KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -334,9 +377,12 @@ public class MPlatos extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(NPlato1)
-                            .addComponent(PPlato1)
-                            .addComponent(Plato1))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                            .addComponent(PPlato1))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Plato1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -349,7 +395,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addComponent(PPlato1)
                 .addGap(6, 6, 6)
-                .addComponent(Plato1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato1)
+                    .addComponent(CPlato1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -396,15 +444,37 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato3.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato3.setText("1");
+        CPlato3.setBorder(null);
+        CPlato3.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato3.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato3.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato3MouseClicked(evt);
+            }
+        });
+        CPlato3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato3KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Plato3)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(Plato3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(NPlato3)
                     .addComponent(PPlato3))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -419,7 +489,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato3)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato3)
+                    .addComponent(CPlato3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -466,15 +538,37 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato2.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato2.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato2.setText("1");
+        CPlato2.setBorder(null);
+        CPlato2.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato2.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato2.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato2MouseClicked(evt);
+            }
+        });
+        CPlato2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato2KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Plato2)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(Plato2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(NPlato2)
                     .addComponent(PPlato2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -489,7 +583,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato2)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato2)
+                    .addComponent(CPlato2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -537,17 +633,39 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato4.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato4.setText("1");
+        CPlato4.setBorder(null);
+        CPlato4.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato4.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato4.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato4MouseClicked(evt);
+            }
+        });
+        CPlato4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato4KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(NPlato4)
                     .addComponent(PPlato4)
-                    .addComponent(Plato4))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(Plato4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -560,7 +678,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato4)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato4)
+                    .addComponent(CPlato4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -608,15 +728,37 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato5.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato5.setText("1");
+        CPlato5.setBorder(null);
+        CPlato5.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato5.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato5.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato5MouseClicked(evt);
+            }
+        });
+        CPlato5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato5KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Plato5)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(Plato5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(NPlato5)
                     .addComponent(PPlato5))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -631,7 +773,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato5)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato5)
+                    .addComponent(CPlato5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -679,15 +823,37 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato6.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato6.setText("1");
+        CPlato6.setBorder(null);
+        CPlato6.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato6.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato6.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato6MouseClicked(evt);
+            }
+        });
+        CPlato6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato6KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Plato6)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(Plato6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(NPlato6)
                     .addComponent(PPlato6))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -702,7 +868,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato6)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato6)
+                    .addComponent(CPlato6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -750,17 +918,40 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato7.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato7.setText("1");
+        CPlato7.setBorder(null);
+        CPlato7.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato7.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato7.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato7MouseClicked(evt);
+            }
+        });
+        CPlato7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato7KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Plato7)
                     .addComponent(NPlato7)
-                    .addComponent(PPlato7))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Plato7)
+                            .addComponent(PPlato7))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -773,7 +964,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato7)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato7)
+                    .addComponent(CPlato7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -821,17 +1014,40 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato8.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato8.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato8.setText("1");
+        CPlato8.setBorder(null);
+        CPlato8.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato8.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato8.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato8MouseClicked(evt);
+            }
+        });
+        CPlato8.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato8KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Plato8)
                     .addComponent(NPlato8)
-                    .addComponent(PPlato8))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Plato8)
+                            .addComponent(PPlato8))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
@@ -844,7 +1060,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato8)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato8)
+                    .addComponent(CPlato8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -892,17 +1110,40 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato9.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato9.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato9.setText("1");
+        CPlato9.setBorder(null);
+        CPlato9.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato9.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato9.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato9MouseClicked(evt);
+            }
+        });
+        CPlato9.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato9KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Plato9)
                     .addComponent(NPlato9)
-                    .addComponent(PPlato9))
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Plato9)
+                            .addComponent(PPlato9))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
@@ -915,7 +1156,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato9)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato9)
+                    .addComponent(CPlato9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -963,17 +1206,40 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato11.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato11.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato11.setText("1");
+        CPlato11.setBorder(null);
+        CPlato11.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato11.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato11.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato11MouseClicked(evt);
+            }
+        });
+        CPlato11.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato11KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Plato11)
                     .addComponent(NPlato11)
-                    .addComponent(PPlato11))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Plato11)
+                            .addComponent(PPlato11))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
@@ -986,7 +1252,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato11)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato11)
+                    .addComponent(CPlato11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -1034,17 +1302,40 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato12.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato12.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato12.setText("1");
+        CPlato12.setBorder(null);
+        CPlato12.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato12.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato12.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato12MouseClicked(evt);
+            }
+        });
+        CPlato12.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato12KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Plato12)
-                    .addComponent(NPlato12)
-                    .addComponent(PPlato12))
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Plato12)
+                            .addComponent(NPlato12)
+                            .addComponent(PPlato12))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
@@ -1057,7 +1348,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato12)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato12)
+                    .addComponent(CPlato12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -1099,6 +1392,25 @@ public class MPlatos extends javax.swing.JFrame {
             }
         });
 
+        CPlato10.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CPlato10.setForeground(new java.awt.Color(16, 19, 24));
+        CPlato10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CPlato10.setText("1");
+        CPlato10.setBorder(null);
+        CPlato10.setMaximumSize(new java.awt.Dimension(20, 20));
+        CPlato10.setMinimumSize(new java.awt.Dimension(20, 20));
+        CPlato10.setPreferredSize(new java.awt.Dimension(20, 20));
+        CPlato10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CPlato10MouseClicked(evt);
+            }
+        });
+        CPlato10.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CPlato10KeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -1108,11 +1420,14 @@ public class MPlatos extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addComponent(Plato10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CPlato10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Plato10)
                             .addComponent(NPlato10)
                             .addComponent(PPlato10))
-                        .addGap(75, 75, 75)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(10, 10, 10))
         );
         jPanel10Layout.setVerticalGroup(
@@ -1125,7 +1440,9 @@ public class MPlatos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PPlato10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Plato10)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Plato10)
+                    .addComponent(CPlato10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -1239,7 +1556,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato1ItemStateChanged
         int codigo = 2343;
         if (Plato1.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato1.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato1.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato1.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1250,7 +1572,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato2ItemStateChanged
         int codigo = 2792;
         if (Plato2.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato2.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato2.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato2.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1261,7 +1588,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato3ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato3ItemStateChanged
         int codigo = 9980;
         if (Plato3.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato3.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato3.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato3.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1272,7 +1604,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato4ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato4ItemStateChanged
         int codigo = 6236;
         if (Plato4.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato4.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato4.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato4.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1283,7 +1620,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato5ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato5ItemStateChanged
         int codigo = 7985;
         if (Plato5.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato5.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato5.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato5.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1294,7 +1636,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato6ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato6ItemStateChanged
         int codigo = 2850;
         if (Plato6.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato6.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato6.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato6.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1305,7 +1652,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato7ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato7ItemStateChanged
         int codigo = 5863;
         if (Plato7.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato7.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato7.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato7.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1316,7 +1668,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato8ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato8ItemStateChanged
         int codigo = 4496;
         if (Plato8.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato8.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato8.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato8.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1327,7 +1684,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato9ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato9ItemStateChanged
         int codigo = 4820;
         if (Plato9.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato9.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato9.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato9.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1338,7 +1700,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato10ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato10ItemStateChanged
         int codigo = 5177;
         if (Plato10.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato10.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato10.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato10.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1349,7 +1716,12 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato11ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato11ItemStateChanged
         int codigo = 3944;
         if (Plato11.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato11.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato11.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato11.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
@@ -1360,13 +1732,246 @@ public class MPlatos extends javax.swing.JFrame {
     private void Plato12ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Plato12ItemStateChanged
         int codigo = 2117;
         if (Plato12.isSelected()) {
-            ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 2);
+            if (CPlato12.getText().isEmpty()) {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CPlato12.setText("1");
+            } else {
+                ptr = agregarPlato(ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CPlato12.getText()));
+            }
             mostrarOrden(ptr);
         } else {
             ptr = QuitarPlato(ptr, codigo);
             mostrarOrden(ptr);
         }
     }//GEN-LAST:event_Plato12ItemStateChanged
+
+    private void CPlato1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato1KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato1.setText("1");
+        } else {
+            CPlato1.setText("");
+            CPlato1.setText("" + c);
+        }
+        if (Plato1.isSelected()) {
+            actualizarPlato(ptr, 2343, Integer.parseInt(CPlato1.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato1KeyTyped
+
+    private void CPlato1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato1MouseClicked
+        CPlato1.setText("");
+    }//GEN-LAST:event_CPlato1MouseClicked
+
+    private void CPlato2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato2MouseClicked
+        CPlato2.setText("");
+    }//GEN-LAST:event_CPlato2MouseClicked
+
+    private void CPlato2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato2KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato2.setText("1");
+        } else {
+            CPlato2.setText("");
+            CPlato2.setText("" + c);
+        }
+        if (Plato2.isSelected()) {
+            actualizarPlato(ptr, 2792, Integer.parseInt(CPlato2.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato2KeyTyped
+
+    private void CPlato3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato3MouseClicked
+        CPlato3.setText("");
+    }//GEN-LAST:event_CPlato3MouseClicked
+
+    private void CPlato3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato3KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato3.setText("1");
+        } else {
+            CPlato3.setText("");
+            CPlato3.setText("" + c);
+        }
+        if (Plato3.isSelected()) {
+            actualizarPlato(ptr, 9980, Integer.parseInt(CPlato3.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato3KeyTyped
+
+    private void CPlato4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato4MouseClicked
+        CPlato4.setText("");
+    }//GEN-LAST:event_CPlato4MouseClicked
+
+    private void CPlato4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato4KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato4.setText("1");
+        } else {
+            CPlato4.setText("");
+            CPlato4.setText("" + c);
+        }
+        if (Plato4.isSelected()) {
+            actualizarPlato(ptr, 6236, Integer.parseInt(CPlato4.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato4KeyTyped
+
+    private void CPlato5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato5MouseClicked
+        CPlato5.setText("");
+    }//GEN-LAST:event_CPlato5MouseClicked
+
+    private void CPlato5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato5KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato5.setText("1");
+        } else {
+            CPlato5.setText("");
+            CPlato5.setText("" + c);
+        }
+        if (Plato5.isSelected()) {
+            actualizarPlato(ptr, 7985, Integer.parseInt(CPlato5.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato5KeyTyped
+
+    private void CPlato6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato6MouseClicked
+        CPlato6.setText("");
+    }//GEN-LAST:event_CPlato6MouseClicked
+
+    private void CPlato6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato6KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato6.setText("1");
+        } else {
+            CPlato6.setText("");
+            CPlato6.setText("" + c);
+        }
+        if (Plato6.isSelected()) {
+            actualizarPlato(ptr, 2850, Integer.parseInt(CPlato6.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato6KeyTyped
+
+    private void CPlato7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato7MouseClicked
+        CPlato7.setText("");
+    }//GEN-LAST:event_CPlato7MouseClicked
+
+    private void CPlato7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato7KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato7.setText("1");
+        } else {
+            CPlato7.setText("");
+            CPlato7.setText("" + c);
+        }
+        if (Plato7.isSelected()) {
+            actualizarPlato(ptr, 5863, Integer.parseInt(CPlato7.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato7KeyTyped
+
+    private void CPlato8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato8MouseClicked
+        CPlato8.setText("");
+    }//GEN-LAST:event_CPlato8MouseClicked
+
+    private void CPlato8KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato8KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato8.setText("1");
+        } else {
+            CPlato8.setText("");
+            CPlato8.setText("" + c);
+        }
+        if (Plato8.isSelected()) {
+            actualizarPlato(ptr, 4496, Integer.parseInt(CPlato8.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato8KeyTyped
+
+    private void CPlato9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato9MouseClicked
+        CPlato9.setText("");
+    }//GEN-LAST:event_CPlato9MouseClicked
+
+    private void CPlato9KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato9KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato9.setText("1");
+        } else {
+            CPlato9.setText("");
+            CPlato9.setText("" + c);
+        }
+        if (Plato9.isSelected()) {
+            actualizarPlato(ptr, 4820, Integer.parseInt(CPlato9.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato9KeyTyped
+
+    private void CPlato10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato10MouseClicked
+        CPlato10.setText("");
+    }//GEN-LAST:event_CPlato10MouseClicked
+
+    private void CPlato10KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato10KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato10.setText("1");
+        } else {
+            CPlato10.setText("");
+            CPlato10.setText("" + c);
+        }
+        if (Plato10.isSelected()) {
+            actualizarPlato(ptr, 5177, Integer.parseInt(CPlato10.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato10KeyTyped
+
+    private void CPlato11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato11MouseClicked
+        CPlato11.setText("");
+    }//GEN-LAST:event_CPlato11MouseClicked
+
+    private void CPlato11KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato11KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato11.setText("1");
+        } else {
+            CPlato11.setText("");
+            CPlato11.setText("" + c);
+        }
+        if (Plato11.isSelected()) {
+            actualizarPlato(ptr, 3944, Integer.parseInt(CPlato11.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato11KeyTyped
+
+    private void CPlato12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CPlato12MouseClicked
+        CPlato12.setText("");
+    }//GEN-LAST:event_CPlato12MouseClicked
+
+    private void CPlato12KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CPlato12KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CPlato12.setText("1");
+        } else {
+            CPlato12.setText("");
+            CPlato12.setText("" + c);
+        }
+        if (Plato12.isSelected()) {
+            actualizarPlato(ptr, 2117, Integer.parseInt(CPlato12.getText()));
+            mostrarOrden(ptr);
+        }
+    }//GEN-LAST:event_CPlato12KeyTyped
     /**
      * @param args the command line arguments
      */
@@ -1406,6 +2011,18 @@ public class MPlatos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField CPlato1;
+    private javax.swing.JTextField CPlato10;
+    private javax.swing.JTextField CPlato11;
+    private javax.swing.JTextField CPlato12;
+    private javax.swing.JTextField CPlato2;
+    private javax.swing.JTextField CPlato3;
+    private javax.swing.JTextField CPlato4;
+    private javax.swing.JTextField CPlato5;
+    private javax.swing.JTextField CPlato6;
+    private javax.swing.JTextField CPlato7;
+    private javax.swing.JTextField CPlato8;
+    private javax.swing.JTextField CPlato9;
     private javax.swing.JButton CocinaAD;
     private javax.swing.JButton CocinaAD1;
     private javax.swing.JLabel LabelOrden;

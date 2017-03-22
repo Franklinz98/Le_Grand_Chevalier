@@ -8,13 +8,16 @@ package vista;
 import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.DefaultListModel;
+import modelo.PlatoP;
 
 /**
  *
  * @author mybas
  */
 public class MBebidas extends javax.swing.JFrame {
-
+ 
+    
     /**
      * Creates new form IntPrincipal
      */
@@ -30,8 +33,25 @@ public class MBebidas extends javax.swing.JFrame {
 
         this.getContentPane().setBackground(Naranjarest);
         PanelRojo.setBackground(Vinorest);
+        DefaultListModel model = new DefaultListModel();
+        OrdenBebidas.setModel(model);
+        if (MPlatos.ptr!=null) {
+            mostrarOrden(MPlatos.ptr);
+        }
     }
 
+    void mostrarOrden(MPlatos.Orden ptr) {
+        DefaultListModel model = (DefaultListModel) OrdenBebidas.getModel();
+        model.clear();
+
+        MPlatos.Orden p = ptr;
+        while (p != null) {
+            model.addElement(p.nombre+","+p.cantidad+".");
+            p = p.link;
+        }
+
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -57,66 +77,77 @@ public class MBebidas extends javax.swing.JFrame {
         NBebida1 = new javax.swing.JLabel();
         PBebida1 = new javax.swing.JLabel();
         Bebida1 = new javax.swing.JCheckBox();
+        CBebida1 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
         VBebida3 = new javax.swing.JLabel();
         NBebida3 = new javax.swing.JLabel();
         PBebida3 = new javax.swing.JLabel();
         Bebida3 = new javax.swing.JCheckBox();
+        CBebida3 = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
         jPanel14 = new javax.swing.JPanel();
         VBebida2 = new javax.swing.JLabel();
         NBebida2 = new javax.swing.JLabel();
         PBebida2 = new javax.swing.JLabel();
         Bebida2 = new javax.swing.JCheckBox();
+        CBebida2 = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jPanel16 = new javax.swing.JPanel();
         VBebida4 = new javax.swing.JLabel();
         NBebida4 = new javax.swing.JLabel();
         PBebida4 = new javax.swing.JLabel();
         Bebida4 = new javax.swing.JCheckBox();
+        CBebida4 = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
         VBebida5 = new javax.swing.JLabel();
         NBebida5 = new javax.swing.JLabel();
         PBebida5 = new javax.swing.JLabel();
         Bebida5 = new javax.swing.JCheckBox();
+        CBebida5 = new javax.swing.JTextField();
         jPanel6 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         VBebida6 = new javax.swing.JLabel();
         NBebida6 = new javax.swing.JLabel();
         PBebida6 = new javax.swing.JLabel();
         Bebida6 = new javax.swing.JCheckBox();
+        CBebida6 = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
         jPanel19 = new javax.swing.JPanel();
         VBebida7 = new javax.swing.JLabel();
         NBebida7 = new javax.swing.JLabel();
         PBebida7 = new javax.swing.JLabel();
         Bebida7 = new javax.swing.JCheckBox();
+        CBebida7 = new javax.swing.JTextField();
         jPanel8 = new javax.swing.JPanel();
         jPanel20 = new javax.swing.JPanel();
         VBebida8 = new javax.swing.JLabel();
         NBebida8 = new javax.swing.JLabel();
         PBebida8 = new javax.swing.JLabel();
         Bebida8 = new javax.swing.JCheckBox();
+        CBebida8 = new javax.swing.JTextField();
         jPanel9 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
         VBebida9 = new javax.swing.JLabel();
         NBebida9 = new javax.swing.JLabel();
         PBebida9 = new javax.swing.JLabel();
         Bebida9 = new javax.swing.JCheckBox();
+        CBebida9 = new javax.swing.JTextField();
         jPanel11 = new javax.swing.JPanel();
         jPanel23 = new javax.swing.JPanel();
         VBebida11 = new javax.swing.JLabel();
         NBebida11 = new javax.swing.JLabel();
         PBebida11 = new javax.swing.JLabel();
         Bebida11 = new javax.swing.JCheckBox();
+        CBebida11 = new javax.swing.JTextField();
         jPanel10 = new javax.swing.JPanel();
         jPanel22 = new javax.swing.JPanel();
         VBebida10 = new javax.swing.JLabel();
         NBebida10 = new javax.swing.JLabel();
         PBebida10 = new javax.swing.JLabel();
         Bebida10 = new javax.swing.JCheckBox();
+        CBebida10 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
@@ -249,19 +280,47 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida1.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida1ItemStateChanged(evt);
+            }
+        });
+
+        CBebida1.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida1.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida1.setText("1");
+        CBebida1.setBorder(null);
+        CBebida1.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida1.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida1.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida1MouseClicked(evt);
+            }
+        });
+        CBebida1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida1KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(NBebida1)
-                            .addComponent(PBebida1)
-                            .addComponent(Bebida1)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(PBebida1)
+                                    .addComponent(Bebida1))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(CBebida1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -277,7 +336,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addComponent(PBebida1)
                 .addGap(6, 6, 6)
-                .addComponent(Bebida1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida1)
+                    .addComponent(CBebida1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -318,6 +379,30 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida3.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida3.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida3.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida3ItemStateChanged(evt);
+            }
+        });
+
+        CBebida3.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida3.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida3.setText("1");
+        CBebida3.setBorder(null);
+        CBebida3.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida3.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida3.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida3MouseClicked(evt);
+            }
+        });
+        CBebida3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida3KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -329,10 +414,13 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Bebida3)
                             .addComponent(NBebida3)
                             .addComponent(PBebida3))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(Bebida3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CBebida3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -345,7 +433,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PBebida3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bebida3)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida3)
+                    .addComponent(CBebida3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -386,6 +476,30 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida2.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida2.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida2ItemStateChanged(evt);
+            }
+        });
+
+        CBebida2.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida2.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida2.setText("1");
+        CBebida2.setBorder(null);
+        CBebida2.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida2.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida2.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida2MouseClicked(evt);
+            }
+        });
+        CBebida2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida2KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -397,10 +511,13 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Bebida2)
                             .addComponent(NBebida2)
                             .addComponent(PBebida2))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(Bebida2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CBebida2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -413,7 +530,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PBebida2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bebida2)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida2)
+                    .addComponent(CBebida2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -455,6 +574,30 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida4.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida4.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida4.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida4ItemStateChanged(evt);
+            }
+        });
+
+        CBebida4.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida4.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida4.setText("1");
+        CBebida4.setBorder(null);
+        CBebida4.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida4.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida4.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida4MouseClicked(evt);
+            }
+        });
+        CBebida4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida4KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -467,9 +610,12 @@ public class MBebidas extends javax.swing.JFrame {
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(NBebida4)
-                            .addComponent(PBebida4)
-                            .addComponent(Bebida4))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                            .addComponent(PBebida4))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addComponent(Bebida4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CBebida4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -482,7 +628,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PBebida4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bebida4)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida4)
+                    .addComponent(CBebida4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -524,6 +672,30 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida5.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida5.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida5.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida5ItemStateChanged(evt);
+            }
+        });
+
+        CBebida5.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida5.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida5.setText("1");
+        CBebida5.setBorder(null);
+        CBebida5.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida5.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida5.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida5MouseClicked(evt);
+            }
+        });
+        CBebida5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida5KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -535,10 +707,13 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Bebida5)
                             .addComponent(NBebida5)
                             .addComponent(PBebida5))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addComponent(Bebida5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CBebida5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel5Layout.setVerticalGroup(
@@ -551,7 +726,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PBebida5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bebida5)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida5)
+                    .addComponent(CBebida5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -593,6 +770,30 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida6.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida6.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida6.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida6ItemStateChanged(evt);
+            }
+        });
+
+        CBebida6.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida6.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida6.setText("1");
+        CBebida6.setBorder(null);
+        CBebida6.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida6.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida6.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida6MouseClicked(evt);
+            }
+        });
+        CBebida6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida6KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -604,10 +805,13 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Bebida6)
                             .addComponent(NBebida6)
                             .addComponent(PBebida6))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(Bebida6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CBebida6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel6Layout.setVerticalGroup(
@@ -620,7 +824,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PBebida6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bebida6)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida6)
+                    .addComponent(CBebida6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -663,6 +869,30 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida7.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida7.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida7.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida7.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida7ItemStateChanged(evt);
+            }
+        });
+
+        CBebida7.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida7.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida7.setText("1");
+        CBebida7.setBorder(null);
+        CBebida7.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida7.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida7.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida7MouseClicked(evt);
+            }
+        });
+        CBebida7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida7KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -674,10 +904,13 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Bebida7)
                             .addComponent(NBebida7)
                             .addComponent(PBebida7))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addComponent(Bebida7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CBebida7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
@@ -690,7 +923,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PBebida7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bebida7)
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida7)
+                    .addComponent(CBebida7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -732,6 +967,30 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida8.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida8.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida8.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida8.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida8ItemStateChanged(evt);
+            }
+        });
+
+        CBebida8.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida8.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida8.setText("1");
+        CBebida8.setBorder(null);
+        CBebida8.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida8.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida8.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida8MouseClicked(evt);
+            }
+        });
+        CBebida8.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida8KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
@@ -743,10 +1002,13 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Bebida8)
                             .addComponent(NBebida8)
                             .addComponent(PBebida8))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(Bebida8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CBebida8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel8Layout.setVerticalGroup(
@@ -759,7 +1021,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PBebida8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bebida8)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida8)
+                    .addComponent(CBebida8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -801,6 +1065,30 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida9.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida9.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida9.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida9.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida9ItemStateChanged(evt);
+            }
+        });
+
+        CBebida9.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida9.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida9.setText("1");
+        CBebida9.setBorder(null);
+        CBebida9.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida9.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida9.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida9MouseClicked(evt);
+            }
+        });
+        CBebida9.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida9KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -812,10 +1100,13 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Bebida9)
                             .addComponent(NBebida9)
                             .addComponent(PBebida9))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addComponent(Bebida9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CBebida9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel9Layout.setVerticalGroup(
@@ -828,7 +1119,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PBebida9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bebida9)
+                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida9)
+                    .addComponent(CBebida9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -870,6 +1163,30 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida11.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida11.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida11.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida11.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida11ItemStateChanged(evt);
+            }
+        });
+
+        CBebida11.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida11.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida11.setText("1");
+        CBebida11.setBorder(null);
+        CBebida11.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida11.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida11.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida11MouseClicked(evt);
+            }
+        });
+        CBebida11.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida11KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -881,10 +1198,13 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Bebida11)
                             .addComponent(NBebida11)
                             .addComponent(PBebida11))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addComponent(Bebida11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CBebida11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel11Layout.setVerticalGroup(
@@ -897,7 +1217,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PBebida11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bebida11)
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida11)
+                    .addComponent(CBebida11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -931,6 +1253,30 @@ public class MBebidas extends javax.swing.JFrame {
         Bebida10.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba.png"))); // NOI18N
         Bebida10.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check arriba s.png"))); // NOI18N
         Bebida10.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/check seleccionado.png"))); // NOI18N
+        Bebida10.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                Bebida10ItemStateChanged(evt);
+            }
+        });
+
+        CBebida10.setFont(new java.awt.Font("Freestyle Script", 0, 18)); // NOI18N
+        CBebida10.setForeground(new java.awt.Color(16, 19, 24));
+        CBebida10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        CBebida10.setText("1");
+        CBebida10.setBorder(null);
+        CBebida10.setMaximumSize(new java.awt.Dimension(20, 20));
+        CBebida10.setMinimumSize(new java.awt.Dimension(20, 20));
+        CBebida10.setPreferredSize(new java.awt.Dimension(20, 20));
+        CBebida10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CBebida10MouseClicked(evt);
+            }
+        });
+        CBebida10.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CBebida10KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -942,10 +1288,13 @@ public class MBebidas extends javax.swing.JFrame {
                     .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Bebida10)
                             .addComponent(NBebida10)
                             .addComponent(PBebida10))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addComponent(Bebida10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(CBebida10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
@@ -958,7 +1307,9 @@ public class MBebidas extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PBebida10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Bebida10)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Bebida10)
+                    .addComponent(CBebida10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15))
         );
 
@@ -1067,6 +1418,391 @@ public class MBebidas extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void Bebida1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida1ItemStateChanged
+        int codigo = 9420;
+        if (Bebida1.isSelected()) {
+            if (CBebida1.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida1.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida1.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida1ItemStateChanged
+
+    private void Bebida2ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida2ItemStateChanged
+        int codigo = 9700;
+        if (Bebida2.isSelected()) {
+            if (CBebida2.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida2.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida2.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida2ItemStateChanged
+
+    private void Bebida3ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida3ItemStateChanged
+        int codigo = 8980;
+        if (Bebida3.isSelected()) {
+            if (CBebida3.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida3.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida3.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida3ItemStateChanged
+
+    private void Bebida4ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida4ItemStateChanged
+        int codigo = 1290;
+        if (Bebida4.isSelected()) {
+            if (CBebida4.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida4.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida4.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida4ItemStateChanged
+
+    private void Bebida5ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida5ItemStateChanged
+        int codigo = 9910;
+        if (Bebida5.isSelected()) {
+            if (CBebida5.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida5.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida5.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida5ItemStateChanged
+
+    private void Bebida6ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida6ItemStateChanged
+        int codigo = 4150;
+        if (Bebida6.isSelected()) {
+            if (CBebida6.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida6.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida6.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida6ItemStateChanged
+
+    private void Bebida7ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida7ItemStateChanged
+        int codigo = 5600;
+        if (Bebida7.isSelected()) {
+            if (CBebida7.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida7.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida7.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida7ItemStateChanged
+
+    private void Bebida8ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida8ItemStateChanged
+        int codigo = 7490;
+        if (Bebida8.isSelected()) {
+            if (CBebida8.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida8.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida8.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida8ItemStateChanged
+
+    private void Bebida9ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida9ItemStateChanged
+        int codigo = 9100;
+        if (Bebida9.isSelected()) {
+            if (CBebida9.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida9.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida9.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida9ItemStateChanged
+
+    private void Bebida10ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida10ItemStateChanged
+        int codigo = 1490;
+        if (Bebida10.isSelected()) {
+            if (CBebida10.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida10.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida10.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida10ItemStateChanged
+
+    private void Bebida11ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_Bebida11ItemStateChanged
+        int codigo = 6020;
+        if (Bebida11.isSelected()) {
+            if (CBebida11.getText().isEmpty()) {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), 1);
+                CBebida11.setText("1");
+            } else {
+                MPlatos.ptr = MPlatos.agregarPlato(MPlatos.ptr, codigo, PlatoP.Buscarnombre(codigo), PlatoP.Buscarprecio(codigo), Integer.parseInt(CBebida11.getText()));
+            }
+            mostrarOrden(MPlatos.ptr);
+        } else {
+            MPlatos.ptr = MPlatos.QuitarPlato(MPlatos.ptr, codigo);
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_Bebida11ItemStateChanged
+
+    private void CBebida1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida1MouseClicked
+        CBebida1.setText("");
+    }//GEN-LAST:event_CBebida1MouseClicked
+
+    private void CBebida1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida1KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida1.setText("1");
+        } else {
+            CBebida1.setText("");
+            CBebida1.setText("" + c);
+        }
+        if (Bebida1.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 9420, Integer.parseInt(CBebida1.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida1KeyTyped
+
+    private void CBebida2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida2MouseClicked
+        CBebida2.setText("");
+    }//GEN-LAST:event_CBebida2MouseClicked
+
+    private void CBebida2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida2KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida2.setText("1");
+        } else {
+            CBebida2.setText("");
+            CBebida2.setText("" + c);
+        }
+        if (Bebida2.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 9700, Integer.parseInt(CBebida2.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida2KeyTyped
+
+    private void CBebida3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida3MouseClicked
+        CBebida3.setText("");
+    }//GEN-LAST:event_CBebida3MouseClicked
+
+    private void CBebida3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida3KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida3.setText("1");
+        } else {
+            CBebida3.setText("");
+            CBebida3.setText("" + c);
+        }
+        if (Bebida3.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 8980, Integer.parseInt(CBebida3.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida3KeyTyped
+
+    private void CBebida4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida4MouseClicked
+        CBebida4.setText("");
+    }//GEN-LAST:event_CBebida4MouseClicked
+
+    private void CBebida4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida4KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida4.setText("1");
+        } else {
+            CBebida4.setText("");
+            CBebida4.setText("" + c);
+        }
+        if (Bebida4.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 1290, Integer.parseInt(CBebida4.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida4KeyTyped
+
+    private void CBebida5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida5MouseClicked
+        CBebida5.setText("");
+    }//GEN-LAST:event_CBebida5MouseClicked
+
+    private void CBebida5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida5KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida5.setText("1");
+        } else {
+            CBebida5.setText("");
+            CBebida5.setText("" + c);
+        }
+        if (Bebida5.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 9910, Integer.parseInt(CBebida5.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida5KeyTyped
+
+    private void CBebida6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida6MouseClicked
+        CBebida6.setText("");
+    }//GEN-LAST:event_CBebida6MouseClicked
+
+    private void CBebida6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida6KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida6.setText("1");
+        } else {
+            CBebida6.setText("");
+            CBebida6.setText("" + c);
+        }
+        if (Bebida6.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 4150, Integer.parseInt(CBebida6.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida6KeyTyped
+
+    private void CBebida7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida7MouseClicked
+        CBebida7.setText("");
+    }//GEN-LAST:event_CBebida7MouseClicked
+
+    private void CBebida7KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida7KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida7.setText("1");
+        } else {
+            CBebida7.setText("");
+            CBebida7.setText("" + c);
+        }
+        if (Bebida7.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 5600, Integer.parseInt(CBebida7.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida7KeyTyped
+
+    private void CBebida8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida8MouseClicked
+        CBebida8.setText("");
+    }//GEN-LAST:event_CBebida8MouseClicked
+
+    private void CBebida8KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida8KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida8.setText("1");
+        } else {
+            CBebida8.setText("");
+            CBebida8.setText("" + c);
+        }
+        if (Bebida8.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 7490, Integer.parseInt(CBebida8.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida8KeyTyped
+
+    private void CBebida9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida9MouseClicked
+        CBebida9.setText("");
+    }//GEN-LAST:event_CBebida9MouseClicked
+
+    private void CBebida9KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida9KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida9.setText("1");
+        } else {
+            CBebida9.setText("");
+            CBebida9.setText("" + c);
+        }
+        if (Bebida9.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 9100, Integer.parseInt(CBebida9.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida9KeyTyped
+
+    private void CBebida10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida10MouseClicked
+        CBebida10.setText("");
+    }//GEN-LAST:event_CBebida10MouseClicked
+
+    private void CBebida10KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida10KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida10.setText("1");
+        } else {
+            CBebida10.setText("");
+            CBebida10.setText("" + c);
+        }
+        if (Bebida10.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 1490, Integer.parseInt(CBebida10.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida10KeyTyped
+
+    private void CBebida11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CBebida11MouseClicked
+        CBebida11.setText("");
+    }//GEN-LAST:event_CBebida11MouseClicked
+
+    private void CBebida11KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CBebida11KeyTyped
+        char c = evt.getKeyChar();
+        evt.consume();
+        if (!Character.isDigit(c) || c == '0') {
+            CBebida11.setText("1");
+        } else {
+            CBebida11.setText("");
+            CBebida11.setText("" + c);
+        }
+        if (Bebida11.isSelected()) {
+            MPlatos.actualizarPlato(MPlatos.ptr, 6020, Integer.parseInt(CBebida11.getText()));
+            mostrarOrden(MPlatos.ptr);
+        }
+    }//GEN-LAST:event_CBebida11KeyTyped
+
     /**
      * @param args the command line arguments
      */
@@ -1121,6 +1857,17 @@ public class MBebidas extends javax.swing.JFrame {
     private javax.swing.JCheckBox Bebida7;
     private javax.swing.JCheckBox Bebida8;
     private javax.swing.JCheckBox Bebida9;
+    private javax.swing.JTextField CBebida1;
+    private javax.swing.JTextField CBebida10;
+    private javax.swing.JTextField CBebida11;
+    private javax.swing.JTextField CBebida2;
+    private javax.swing.JTextField CBebida3;
+    private javax.swing.JTextField CBebida4;
+    private javax.swing.JTextField CBebida5;
+    private javax.swing.JTextField CBebida6;
+    private javax.swing.JTextField CBebida7;
+    private javax.swing.JTextField CBebida8;
+    private javax.swing.JTextField CBebida9;
     private javax.swing.JButton CocinaAD;
     private javax.swing.JButton CocinaAD1;
     private javax.swing.JLabel LabelOrden;
