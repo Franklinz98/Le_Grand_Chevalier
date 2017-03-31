@@ -25,13 +25,8 @@ public class MPostres extends javax.swing.JFrame {
         Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Recursos/LGC_Icon.png"));
         setIconImage(icon);
         //Color JFrame
-        Color Naranjarest = new Color(217, 120, 26);
-        Color Vinorest = new Color(142, 0, 16);
-        Color Grisrest = new Color(16, 19, 24);
-        Color Blancorest = new Color(255, 255, 255);
-
-        this.getContentPane().setBackground(Naranjarest);
-        PanelRojo.setBackground(Vinorest);
+        Color mostazarest = new Color(213,170,65);
+        this.getContentPane().setBackground(mostazarest);
         DefaultListModel model = new DefaultListModel();
         OrdenPostres.setModel(model);
         if (MPlatos.ptr!=null) {
@@ -132,6 +127,8 @@ public class MPostres extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(960, 600));
 
+        PanelRojo.setBackground(new java.awt.Color(0, 0, 0));
+
         LabelOrden.setFont(new java.awt.Font("Freestyle Script", 0, 72)); // NOI18N
         LabelOrden.setForeground(new java.awt.Color(255, 255, 255));
         LabelOrden.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -200,20 +197,22 @@ public class MPostres extends javax.swing.JFrame {
         );
 
         LabelPlatos.setFont(new java.awt.Font("Freestyle Script", 0, 72)); // NOI18N
-        LabelPlatos.setForeground(new java.awt.Color(16, 19, 24));
         LabelPlatos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LabelPlatos.setText("Postres");
+        LabelPlatos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesMenu/Postres.png"))); // NOI18N
+        LabelPlatos.setMaximumSize(new java.awt.Dimension(163, 86));
+        LabelPlatos.setMinimumSize(new java.awt.Dimension(163, 86));
+        LabelPlatos.setPreferredSize(new java.awt.Dimension(163, 86));
 
         Scrollp.setBackground(new java.awt.Color(217, 120, 26));
         Scrollp.setBorder(null);
         Scrollp.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        Menu.setBackground(new java.awt.Color(217, 120, 26));
+        Menu.setBackground(new java.awt.Color(213, 170, 65));
         Menu.setMaximumSize(new java.awt.Dimension(688, 830));
         Menu.setMinimumSize(new java.awt.Dimension(688, 830));
         Menu.setPreferredSize(new java.awt.Dimension(688, 830));
 
-        jPanel1.setBackground(new java.awt.Color(16, 19, 24));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setMaximumSize(new java.awt.Dimension(166, 255));
         jPanel1.setMinimumSize(new java.awt.Dimension(166, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(166, 255));
@@ -309,7 +308,7 @@ public class MPostres extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
-        jPanel2.setBackground(new java.awt.Color(16, 19, 24));
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setMaximumSize(new java.awt.Dimension(166, 255));
         jPanel2.setMinimumSize(new java.awt.Dimension(166, 255));
         jPanel2.setPreferredSize(new java.awt.Dimension(166, 255));
@@ -406,7 +405,7 @@ public class MPostres extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
-        jPanel3.setBackground(new java.awt.Color(16, 19, 24));
+        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
         jPanel3.setMaximumSize(new java.awt.Dimension(166, 255));
         jPanel3.setMinimumSize(new java.awt.Dimension(166, 255));
         jPanel3.setPreferredSize(new java.awt.Dimension(166, 255));
@@ -503,7 +502,7 @@ public class MPostres extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
-        jPanel4.setBackground(new java.awt.Color(16, 19, 24));
+        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
         jPanel4.setMaximumSize(new java.awt.Dimension(166, 255));
         jPanel4.setMinimumSize(new java.awt.Dimension(166, 255));
         jPanel4.setPreferredSize(new java.awt.Dimension(166, 255));
@@ -600,7 +599,7 @@ public class MPostres extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
-        jPanel5.setBackground(new java.awt.Color(16, 19, 24));
+        jPanel5.setBackground(new java.awt.Color(0, 0, 0));
         jPanel5.setMaximumSize(new java.awt.Dimension(166, 255));
         jPanel5.setMinimumSize(new java.awt.Dimension(166, 255));
         jPanel5.setPreferredSize(new java.awt.Dimension(166, 255));
@@ -698,7 +697,7 @@ public class MPostres extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
-        jPanel6.setBackground(new java.awt.Color(16, 19, 24));
+        jPanel6.setBackground(new java.awt.Color(0, 0, 0));
         jPanel6.setMaximumSize(new java.awt.Dimension(166, 255));
         jPanel6.setMinimumSize(new java.awt.Dimension(166, 255));
         jPanel6.setPreferredSize(new java.awt.Dimension(166, 255));
@@ -796,7 +795,7 @@ public class MPostres extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
-        jPanel7.setBackground(new java.awt.Color(16, 19, 24));
+        jPanel7.setBackground(new java.awt.Color(0, 0, 0));
         jPanel7.setMaximumSize(new java.awt.Dimension(166, 255));
         jPanel7.setMinimumSize(new java.awt.Dimension(166, 255));
         jPanel7.setPreferredSize(new java.awt.Dimension(166, 255));
@@ -956,8 +955,8 @@ public class MPostres extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(196, 196, 196)
-                        .addComponent(LabelPlatos))
+                        .addGap(170, 170, 170)
+                        .addComponent(LabelPlatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(Scrollp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(PanelRojo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -966,7 +965,7 @@ public class MPostres extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LabelPlatos)
+                    .addComponent(LabelPlatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))

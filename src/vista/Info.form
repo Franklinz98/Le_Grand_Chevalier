@@ -139,7 +139,7 @@
         <Container class="javax.swing.JPanel" name="MeseroPanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="1a" green="78" red="d9" type="rgb"/>
+              <Color blue="41" green="aa" red="d5" type="rgb"/>
             </Property>
             <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[260, 128]"/>
@@ -487,7 +487,7 @@
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Recursos/vMenu normal.png"/>
+          <Image iconType="3" name="/Recursos/BotonesAdmin/vMenu normal.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
@@ -504,13 +504,13 @@
           <Dimension value="[81, 56]"/>
         </Property>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Recursos/vMenu presionado.png"/>
+          <Image iconType="3" name="/Recursos/BotonesAdmin/vMenu presionado.png"/>
         </Property>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Recursos/vMenu arriba.png"/>
+          <Image iconType="3" name="/Recursos/BotonesAdmin/vMenu arriba.png"/>
         </Property>
         <Property name="rolloverSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Recursos/vMenu arriba.png"/>
+          <Image iconType="3" name="/Recursos/BotonesAdmin/vMenu arriba.png"/>
         </Property>
       </Properties>
       <Events>

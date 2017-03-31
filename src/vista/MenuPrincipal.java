@@ -23,11 +23,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
         Image icon = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Recursos/LGC_Icon.png"));
         setIconImage(icon);
         //Color JFrame
-        Color Naranjarest=new Color(217,120,26);
-        Color Vinorest=new Color(217,120,26);
-        Color Grisrest=new Color(142,0,16);
-        Color Blancorest=new Color(255,255,255);
-        this.getContentPane().setBackground(Naranjarest);
+        Color mostazarest = new Color(213,170,65);
+        this.getContentPane().setBackground(mostazarest);
     }
 
     /**

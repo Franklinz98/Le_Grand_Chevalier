@@ -366,7 +366,7 @@
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Recursos/vMenu normal.png"/>
+          <Image iconType="3" name="/Recursos/BotonesAdmin/vMenu normal.png"/>
         </Property>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="null"/>
@@ -383,13 +383,13 @@
           <Dimension value="[81, 56]"/>
         </Property>
         <Property name="pressedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Recursos/vMenu presionado.png"/>
+          <Image iconType="3" name="/Recursos/BotonesAdmin/vMenu presionado.png"/>
         </Property>
         <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Recursos/vMenu arriba.png"/>
+          <Image iconType="3" name="/Recursos/BotonesAdmin/vMenu arriba.png"/>
         </Property>
         <Property name="rolloverSelectedIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Recursos/vMenu arriba.png"/>
+          <Image iconType="3" name="/Recursos/BotonesAdmin/vMenu arriba.png"/>
         </Property>
       </Properties>
       <Events>

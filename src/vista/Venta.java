@@ -181,16 +181,16 @@ public class Venta extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/vMenu normal.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/vMenu normal.png"))); // NOI18N
         jButton2.setBorder(null);
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.setMaximumSize(new java.awt.Dimension(81, 56));
         jButton2.setMinimumSize(new java.awt.Dimension(81, 56));
         jButton2.setPreferredSize(new java.awt.Dimension(81, 56));
-        jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/vMenu presionado.png"))); // NOI18N
-        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/vMenu arriba.png"))); // NOI18N
-        jButton2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/vMenu arriba.png"))); // NOI18N
+        jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/vMenu presionado.png"))); // NOI18N
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/vMenu arriba.png"))); // NOI18N
+        jButton2.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/BotonesAdmin/vMenu arriba.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
