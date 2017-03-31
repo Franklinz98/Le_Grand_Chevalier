@@ -24,11 +24,7 @@ public class Venta extends javax.swing.JFrame {
         setIconImage(icon);
         //Color JFrame
         Color Vinorest = new Color(142, 0, 16);
-        Color Grisrest = new Color(16, 19, 24);
-        Color Blancorest = new Color(255, 255, 255);
         this.getContentPane().setBackground(Vinorest);
-        PanelGris.setBackground(Grisrest);
-        PanelBlanco.setBackground(Blancorest);
     }
 
     /**
@@ -59,6 +55,7 @@ public class Venta extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(960, 600));
 
+        PanelGris.setBackground(new java.awt.Color(16, 19, 24));
         PanelGris.setMaximumSize(new java.awt.Dimension(960, 151));
         PanelGris.setMinimumSize(new java.awt.Dimension(960, 151));
 
@@ -100,6 +97,7 @@ public class Venta extends javax.swing.JFrame {
         LabelOrden.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelOrden.setText("Ventas");
 
+        PanelBlanco.setBackground(new java.awt.Color(255, 255, 255));
         PanelBlanco.setMaximumSize(new java.awt.Dimension(784, 331));
         PanelBlanco.setMinimumSize(new java.awt.Dimension(784, 331));
         PanelBlanco.setPreferredSize(new java.awt.Dimension(784, 331));

@@ -115,15 +115,17 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void MenuPPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuPPActionPerformed
-        MenuP elec = new MenuP();
-        elec.setVisible(true);
+        /**/
         //this.setVisible(false);
+        SesionMenu loginm = new SesionMenu();
+        loginm.setVisible(true);
     }//GEN-LAST:event_MenuPPActionPerformed
 
     private void AdministracionPPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdministracionPPActionPerformed
-        AdminP elec = new AdminP();
-        elec.setVisible(true);
+        /**/
         //this.setVisible(false);
+        SesionAdmin logina = new SesionAdmin();
+        logina.setVisible(true);
     }//GEN-LAST:event_AdministracionPPActionPerformed
 
     /**

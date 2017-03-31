@@ -77,6 +77,9 @@
   <SubComponents>
     <Container class="javax.swing.JPanel" name="PanelGris">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="18" green="13" red="10" type="rgb"/>
+        </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[960, 151]"/>
         </Property>
@@ -161,6 +164,9 @@
     </Component>
     <Container class="javax.swing.JPanel" name="PanelBlanco">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[784, 331]"/>
         </Property>
