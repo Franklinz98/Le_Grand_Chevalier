@@ -186,8 +186,13 @@ public class SesionMenu extends javax.swing.JFrame {
             clave = clave.substring(0, cont - 1);
             puntos = puntos.substring(0, cont - 1);
             PassMes.setText(puntos);
+            evt.consume();
         }
-        evt.consume();
+        if (evt.getKeyCode()==KeyEvent.VK_ENTER && cont>4) {
+            MenuP elec = new MenuP();
+        elec.setVisible(true);
+        this.dispose();
+        }
     }//GEN-LAST:event_PassMesKeyPressed
 
     private void idMesKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_idMesKeyTyped
